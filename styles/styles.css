@@ -89,6 +89,7 @@ main{
     border-radius:15px;
     box-shadow:var(--shadow);
     color:var(--light);
+    margin-bottom: 3vh;
 }
 
 .user{
@@ -147,18 +148,21 @@ nav a.active{
 }
 
 .card{
-    width:340px;
+    width:360px;
     height:300px;
     background:#ffffff;
     border-radius:20px;
-    padding:1rem;
+    padding:2rem;
     box-shadow:var(--shadow);
     text-decoration:none;
     display:flex;
     flex-direction:column;
     gap:.6rem;
+    align-items: start;
 }
-
+.card small{
+    margin-top: 2rem;
+}
 .card header{
     display:flex;
     justify-content:space-between;
@@ -188,7 +192,7 @@ nav a.active{
 }
 
 /* LINHA DE PROGRESSO */
-.card img[src*="linha"]{
+.card img{
     height:18px;
     width:auto;
 }
@@ -216,6 +220,46 @@ footer img{
     filter:brightness(0) invert(1);
 }
 
+
+/************** FINANCE *****************/
+
+.finance {
+    width:1400px;
+    height:750px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:2rem;
+    padding-top: 0%;
+    padding-left: 0%;
+    box-shadow:var(--shadow);
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:.6rem;
+    align-items: start;
+}
+.finance header{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--dark);
+    width: 5rem;
+    height: 4rem;
+    border-radius: 50px;
+    font-size: x-small;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.finance header img{
+    height:28px;
+    width:auto;
+}
+
+
+
 /* RESPONSIVO */
 @media (max-width:900px){
     main{
@@ -237,26 +281,27 @@ footer img{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
     /* trava o layout */
     body{
-        min-width:400px;
-        overflow-x:auto;
+        min-width:450px;
+
     }
 
     main{
-        min-width:400px;
+        min-width:450px;
     }
 
     header,
     footer{
-        min-width:400px;
+        min-width:430px;
     }
 
-    /* impede cards de encolher mais */
-    .card{
-        min-width:300px;
+
+    .card header{
+        margin-left: 0%;
+        min-width: 100px;
     }
 
     /* imagens não escalam mais, apenas cortam */
@@ -265,7 +310,7 @@ footer img{
     }
 
     .graph img{
-        width:400px;
+        width:450px;
         height:180px;
         object-fit:cover;
     }
