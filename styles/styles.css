@@ -257,13 +257,13 @@ footer img{
     flex-direction:column;
     align-items: center;
     margin: 0px ;
+    gap: 2%;
 }
 
 .specific-finance-top {
     width:100%;
     display:flex;
-    gap:1.5rem;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
 }
@@ -273,7 +273,7 @@ footer img{
     border: solid 1px #cacaca;
     padding: 5px;
     height: 70px;
-    width: auto;
+    width: 30%;
     justify-content: start;
     align-items: center;
     border-radius:5px ;
@@ -292,11 +292,11 @@ footer img{
 }
 
 .specific-finance-top-leftover:hover{
-    box-shadow: 0px 0px 16px  #99c2ff;
+    box-shadow: 0px 0px 16px  #79afff;
 }
 
 .specific-finance-top-income:hover{
-    box-shadow: 0px 0px 16px #88ffaa;
+    box-shadow: 0px 0px 16px #79ff79;
 }
 
 .specific-finance-top-expenses:hover{
@@ -306,9 +306,33 @@ footer img{
 .specific-finance-top-values{
     margin-top: 10px;
     font-family: Impact, Haettenschweiler,;
-
 }
 
+.specific-finance-main {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    gap: 3%;
+}
+
+.specific-finance-main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #cacaca; 
+    width: 70%;
+    height: 100%;
+    padding: 1%;
+}
+.specific-finance-main-left-graph {
+
+    width: 90%;
+}
+.specific-finance-main-right {
+    border: solid 1px #cacaca; 
+    width: 30%;
+    height: 100%;
+}
 
 
 @media (max-width:1200px){
