@@ -317,23 +317,45 @@ footer img{
 
 .specific-finance-main-left {
     display: flex;
+    overflow-y:auto;
     flex-direction: column;
     align-items: center;
     border: solid 1px #cacaca; 
     width: 70%;
     height: 100%;
     padding: 1%;
+    gap: 70px;
 }
-.specific-finance-main-left-graph {
 
-    width: 90%;
-}
 .specific-finance-main-right {
-    border: solid 1px #cacaca; 
+    display: flex;
+    flex-direction: column; 
     width: 30%;
     height: 100%;
+    gap: 50px;
+    padding-top: 70px;
+}
+.specific-finance-main-left-history{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
+.specific-finance-main-left-graph{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.specific-finance-main-btn {
+    background-color: var(--dark);
+    color: var(--light);
+    height: 6vh;
+    border-radius: 15px;
+}
+.specific-finance-main-btn:hover {
+    background-color: var(--text);
+}
 
 @media (max-width:1200px){
     main{
