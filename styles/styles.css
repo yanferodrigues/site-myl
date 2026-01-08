@@ -223,17 +223,16 @@ footer img{
 
 
 /************** SPECIFIC *****************/
-.card-finance{
+.content-box{
     flex:1;
     width: 100%;
     display:flex;
     flex-direction: column;
-    flex-wrap:wrap;
     gap:1rem;
     justify-content:center;
     align-items: center;
 }
-.card-title{
+.content-title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +244,7 @@ footer img{
     height: 70px;
 }
 
-.specific-finance {
+.specific-content {
     width:95%;
     height:750px;
     background:#ffffff;
@@ -259,6 +258,13 @@ footer img{
     margin: 0px ;
     gap: 2%;
 }
+
+.content-title img{
+    height:28px;
+    width: 28px;
+}
+
+/************** FINANCE *****************/
 
 .specific-finance-top {
     width:100%;
@@ -284,11 +290,6 @@ footer img{
 }
 .specific-finance-top-title img{
     height: 15px;
-}
-
-.card-title img{
-    height:28px;
-    width: 28px;
 }
 
 .specific-finance-top-leftover:hover{
@@ -357,6 +358,51 @@ footer img{
     background-color: var(--text);
 }
 
+/************** TASKS *****************/
+.specific-tasks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.specific-tasks-today {
+    width:85%;
+    height:400px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:2rem;
+    box-shadow:var(--shadow);
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 2%;
+}
+.specific-tasks-future {
+    width:90%;
+    height:50%;
+    padding:2rem;
+    display:flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.specific-tasks-future-card {
+    width:40%;
+    height:250px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:2rem;
+    box-shadow:var(--shadow);
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 0px ;
+    gap: 2%;
+}
 @media (max-width:1200px){
     main{
         flex-direction:column;
