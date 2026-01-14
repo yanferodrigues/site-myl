@@ -85,7 +85,7 @@ main{
 
 /* MENU */
 .menu{
-    min-width:200px;
+    min-width:250px;
     padding:1rem;
     background:var(--dark);
     border-radius:15px;
@@ -182,8 +182,19 @@ nav a.active{
 }
 
 .scroll{
+    display: flex;
+    flex-direction: column;
     overflow-y:auto;
+    overflow-x: hidden;
     max-height:140px;
+    width: 100%;
+    background-color:#f6f6f6 ;
+    height: 200px;
+    width: 100%;
+    border: solid 1px #cacaca;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
 }
 
 /* IMAGENS DENTRO DOS CARDS */
@@ -246,12 +257,14 @@ footer img{
 }
 
 .specific-content {
-    width:95%;
-    height:750px;
+    width:95%; 
+    height: auto;
+    min-height:750px;
     background:#ffffff;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
     padding:2rem;
+    padding-top: 0%;
     box-shadow:var(--shadow);
     text-decoration:none;
     display:flex;
@@ -277,10 +290,15 @@ footer img{
     font-size: 15px;
     width: 80%;
     gap:10px;
+    box-shadow: var(--shadow);
 }
 
 .btn img{
     height: 20px;
+}
+
+.btn:hover {
+    background-color: var(--text);
 }
 
 /************** FINANCE *****************/
@@ -332,7 +350,7 @@ footer img{
     height: 90%;
     width: 100%;
     display: flex;
-    gap: 3%;
+    gap: 5%;
 }
 
 .specific-finance-main-left {
@@ -346,6 +364,7 @@ footer img{
     padding: 1%;
     gap: 70px;
 }
+
 
 .specific-finance-main-right {
     display: flex;
@@ -361,16 +380,52 @@ footer img{
     justify-content: space-around;
 }
 
+.specific-finance-main-left-history-text{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.specific-finance-main-left-history-value{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
 .specific-finance-main-left-graph{
     display: flex;
     justify-content: center;
     width: 50%;
 }
 
-
-.specific-finance-main-btn:hover {
-    background-color: var(--text);
+.tabs {
+    display: flex;
+    border: var();
+    background-color: #ffffff;
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap:2%;
+    width: 100%;
+}
+
+.button {
+    background-color: transparent;
+    border: solid transparent;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: var(--font) bold;
+}
+.button:hover {
+    background-color: var(--dark);
+    color: #fff;
+}
+
 
 /************** TASKS *****************/
 .specific-tasks {
@@ -387,6 +442,10 @@ footer img{
     gap:40px;
     justify-content: center;
 }
+.specific-tasks-title {
+    text-decoration: none;
+    color: #151515;
+}
 .specific-tasks-main-today {
     width:50%;
     height:400px;
@@ -396,26 +455,49 @@ footer img{
     box-shadow:var(--shadow);
     text-decoration:none;
     display:flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2%;
+    gap: 30px;
     padding: 20px;
+}
+.specific-tasks-main-today-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 .specific-tasks-main-today-next {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
+    height: 300px;
     border: solid 1px #cacaca;
     border-radius: 15px;
     overflow-y:auto;
+    background-color: #f6f6f6;
     gap: 20px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px;
+    overflow-x: hidden;
 }
 .specific-tasks-main-today-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 50%;
+    height: 300px;
 }
+.specific-tasks-main-today-now p{
+    text-decoration:underline;
+    font-size: larger;
+    text-shadow: var(--shadow);
+}
+.specific-tasks-main-today-now-title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-left: 15%;
+}
+
 .specific-tasks-future {
     width: 100%;
     padding: 2rem;
@@ -436,7 +518,25 @@ footer img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
+.specific-tasks-future-card-content{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 20px;
+    background-color:#f6f6f6 ;
+    height: 200px;
+    width: 100%;
+    border: solid 1px #cacaca;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    color: black;
+    overflow-x: hidden;
+    
+}
+
 .content-title-tasks{
     display: flex;
     flex-direction: column;
@@ -462,6 +562,49 @@ footer img{
     gap: 20px;
 }
 
+/************** GYM *****************/
+
+.specific-gym {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.specific-gym-days {
+    width: 400px;
+    height: 200px;
+    border: solid 1px #cacaca;
+    border-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.specific-gym-days-title {
+    display: flex;
+    background-color: var(--dark);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+.specific-gym-exercices-division {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #676767;
+    padding: 23px;
+    max-width: auto;
+    border-bottom: #cacaca 1px solid;
+    margin: 10px;
+}
+.specific-gym-exercices-title{
+    font-size: large;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width:1200px){
     main{
         flex-direction:column;
@@ -491,7 +634,19 @@ footer img{
         width: 400px;
         height: 250px;
     }
+    .specific-tasks-main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .specific-tasks-main-today {
+        width: 80%;
+    }
+    .specific-tasks-main-btns {
+        flex-direction: row;
+        width: 80%;
+    }
 }
+
 
 @media (max-width: 600px) {
 
