@@ -264,16 +264,17 @@ footer img{
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
     padding:2rem;
-    padding-top: 0%;
     box-shadow:var(--shadow);
-    text-decoration:none;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    margin: 0px ;
     gap: 2%;
 }
-
+.specific-content-finance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2%;
+}
 .content-title img{
     height:28px;
     width: 28px;
@@ -356,13 +357,15 @@ footer img{
 .specific-finance-main-left {
     display: flex;
     overflow-y:auto;
+    overflow-x: hidden;
     flex-direction: column;
     align-items: center;
     border: solid 1px #cacaca; 
-    width: 70%;
-    height: 100%;
+    width: 80%;
+    height: 700px;
     padding: 1%;
     gap: 70px;
+    margin-bottom: 20px;
 }
 
 
@@ -383,11 +386,13 @@ footer img{
 .specific-finance-main-left-history-text{
     display: flex;
     flex-direction: column;
-    gap:20px
+    align-items: center;
+    gap:20px;
+    width: 100%;
 }
 .specific-finance-main-left-history-value{
     display: flex;
-    width: 600px;
+    width: 90%;
     justify-content: space-between;
 }
 .specific-finance-main-left-graph{
@@ -396,7 +401,7 @@ footer img{
     width: 50%;
 }
 
-.tabs {
+.finance-tabs {
     display: flex;
     border: var();
     background-color: #ffffff;
@@ -405,27 +410,51 @@ footer img{
     border-top-right-radius: 15px;
 }
 
-#main {
+.specific-finance {
     display: flex;
     flex-direction: column;
-    gap:2%;
+    gap: 2%;
     width: 100%;
+    height: 100%;
 }
-
-.button {
+.finance-tab {
     background-color: transparent;
-    border: solid transparent;
+    border: solid #cacaca 1px;
     width: 50%;
     height: 50px;
     border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-family: var(--font) bold;
 }
-.button:hover {
+.finance-tab:hover , .finance-tab.active{
     background-color: var(--dark);
     color: #fff;
 }
+.finance-page {
+    display: none;
+    width: 100%;
+}
+.finance-page.active {
+    display: block;
+}
 
+#finance-credit {
+    display: flex;
+    height: 90%;
+    width: 80%;
+}
+.credit-cards {
+    border:solid #cacaca 1px;
+    width: 30%;
+    height: 100%;
+}
+.credit-cards-accounts {
+    border:solid #cacaca 1px;
+    border-left: 0px;
+    width: 70%;
+    height: 100%;
+}
 
 /************** TASKS *****************/
 .specific-tasks {
@@ -645,6 +674,7 @@ footer img{
         flex-direction: row;
         width: 80%;
     }
+    
 }
 
 
