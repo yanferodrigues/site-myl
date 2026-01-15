@@ -79,7 +79,7 @@ main{
     width:90%;
     display:flex;
     flex: 1;
-    gap:1rem;
+    
     margin-bottom: 3vh;
 }
 
@@ -91,6 +91,7 @@ main{
     border-radius:15px;
     box-shadow:var(--shadow);
     color:var(--light);
+    height: auto;
 }
 
 .user{
@@ -138,7 +139,9 @@ nav a:hover,
 nav a.active{
     border:1px solid var(--accent);
 }
-
+#openNavegation {
+    display: none;
+}
 /* CARDS */
 .cards{
     flex:1;
@@ -441,15 +444,16 @@ footer img{
 }
 .finance-page.active {
     display: block;
+    height: 100%;
 }
 #finance-credit {
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 .finance-credit-content {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 800px;
 }
 .credit-cards {
     border:solid #cacaca 1px;
@@ -459,10 +463,13 @@ footer img{
     overflow-x: hidden;
 }
 .credit-cards-accounts {
+    display: flex;
+    flex-wrap: wrap;
     border:solid #cacaca 1px;
     border-left: 0px;
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    justify-content: center;
+    overflow-y: scroll;
 }
 .self-card {
     display: flex;
@@ -477,7 +484,16 @@ footer img{
     background-color: var(--dark);
     color: #fff;
 }
-
+.credit-cards-accounts-graph {
+    width: 80%;
+}
+.credit-cards-accounts-self {
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /************** TASKS *****************/
 .specific-tasks {
     display: flex;
@@ -664,6 +680,7 @@ footer img{
 
     .menu{
         width:90%;
+        
     }
 
     .cards{
@@ -702,7 +719,7 @@ footer img{
         width: 100%;
         flex-wrap: wrap;
         overflow-y: auto;
-        height:200px;
+        height:92px;
         align-items: center;
         justify-content: center;
     }
@@ -711,11 +728,36 @@ footer img{
         align-items: center;
         justify-content: center;
     }
-    #finance-credit {
+    .finance-credit-content {
+
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
-    
+    .credit-cards-accounts {
+        height: 700px;
+        border-top: 0;
+        border-left: solid #cacaca 1px;
+        width: 100%;
+    }
+    .navegation {
+        display: none;
+    }
+    #openNavegation {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        background-color: var(--dark);
+        color: #fff;
+        border: solid #1d1e25 1px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #openNavegation:hover {
+        background-color: #1d1e25;
+    }
+    .content-box {
+        margin-top: 1rem;
+    }
 }
 
 
@@ -736,7 +778,6 @@ footer img{
 
     main {
         flex-direction: column;
-        gap: 1rem;
     }
 
     .menu {
