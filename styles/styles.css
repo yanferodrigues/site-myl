@@ -291,7 +291,6 @@ footer img{
     font-size: 15px;
     width: 80%;
     gap:10px;
-    box-shadow: var(--shadow);
 }
 
 .btn img{
@@ -384,17 +383,21 @@ footer img{
     justify-content: space-around;
 }
 
-.specific-finance-main-left-history-text{
+.specific-finance-main-left-history-self{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
     width: 100%;
+    
 }
 .specific-finance-main-left-history-value{
     display: flex;
     width: 90%;
+    align-items: center;
     justify-content: space-between;
+    border-top: solid 1px #cacaca;
+    padding: 20px;
+    text-shadow: var(--shadow);
 }
 .specific-finance-main-left-graph{
     display: flex;
@@ -439,11 +442,14 @@ footer img{
 .finance-page.active {
     display: block;
 }
-
 #finance-credit {
+    height: 100%;
+    width: 100%;
+}
+.finance-credit-content {
     display: flex;
-    height: 90%;
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
 .credit-cards {
     border:solid #cacaca 1px;
