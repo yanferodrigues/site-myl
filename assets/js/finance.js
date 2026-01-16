@@ -7,3 +7,8 @@ function tabSelector(id,tab) {
     document.querySelectorAll(".finance-tab").forEach(page => {page.classList.remove('active')});
     tab.classList.add('active')
 }
+
+function cardSelector(id) {
+    activeReportId = id;
+    
+}

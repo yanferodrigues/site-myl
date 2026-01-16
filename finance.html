@@ -26,17 +26,17 @@
             <aside class="menu box">
                 <a class="user">
                     <img src="assets/icons/user.png">
-                    <h5>NOME DO USUARIO</h5>
+                    <h5>USERNAME</h5>
                 </a>
-                <nav class="navegation">
+                <nav id="navegation">
                     <a href="index.html"><img src="assets/icons/dashboard.png"><span>Dashboard</span></a>
                     <a class="active"><img src="assets/icons/money.png"><span>Finance</span></a>
                     <a href="gym.html"><img src="assets/icons/gym.png"><span>Gym</span></a>
                     <a href="tasks.html"><img src="assets/icons/checklist.png"><span>Tasks</span></a>
                 </nav>
             </aside>
-            <button id="openNavegation">
-                -
+            <button onclick="openNav()" id="openNavegation">
+                <img src="assets/icons/down arrow.png" alt="down arrow">
             </button>
             
             <section class="content-box">
@@ -159,47 +159,69 @@
                         <div id="finance-credit" class="finance-page">
                             <div class="finance-credit-content">
                                 <aside class="credit-cards">
-                                    <div class="self-card">
+                                    <div onclick="cardSelector('nubank-accounts')" id="nubank" class="self-card active">
                                         Nubank
                                     </div>
-                                    <div class="self-card">
+                                    <div id="inter" class="self-card">
                                         Inter
                                     </div>
-                                    <div class="self-card">
+                                    <div id="bradesco" class="self-card">
                                         Bradesco
                                     </div>
-                                    <div class="self-card">
+                                    <div id="sicredi"class="self-card">
                                         Sicredi
                                     </div>
-                                    <div class="self-card">
+                                    <div id="picpay"class="self-card">
                                         Picpay
                                     </div>
-                                    <div class="self-card">
+                                    <div id="banco do brasil" class="self-card">
                                         Banco do brasil
                                     </div>
-                                    <div class="self-card">
+                                    <div id="will" class="self-card">
                                         Will
                                     </div>
                                 </aside>
-                                <div class="credit-cards-accounts">
-                                   <div class="credit-cards-accounts-self">
-                                        <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="">
-                                   </div>
-                                   <div class="credit-cards-accounts-self">
-                                        <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="">
-                                   </div>
-                                   <div class="credit-cards-accounts-self">
-                                        <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="">
-                                   </div>
-                                   <div class="credit-cards-accounts-self">
-                                        <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="">
-                                   </div>
-                                   <div class="credit-cards-accounts-self">
-                                        <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="">
-                                   </div>
-                                   <div class="credit-cards-accounts-self">
-                                        <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="">
-                                   </div>
+                                <div id="nubank-accounts" class="credit-cards-main-content">
+                                    <div class="credit-cards-accounts active">
+                                        <div class="credit-cards-all-accounts">
+                                            <div class="credit-cards-accounts-self">
+                                                <h3>Phone</h3>
+                                                <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">   
+                                                <p>Installments:</p>
+                                                <h2>8/10</h2> 
+                                            </div>
+                                            <div class="credit-cards-accounts-self">
+                                                <h3>Television</h3>
+                                                <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
+                                                <p>Installments:</p>
+                                                <h2>1/3</h2>
+                                            </div>
+                                            <div class="credit-cards-accounts-self">
+                                                <h3>Pedalboard</h3>
+                                                <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
+                                                <p>Installments:</p>
+                                                <h2>7/11</h2>
+                                            </div>
+                                            <div class="credit-cards-accounts-self">
+                                                <h3>Guitar</h3>
+                                                <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
+                                                <p>Installments:</p>
+                                                <h2>8/12</h2>
+                                            </div>
+                                            <div class="credit-cards-accounts-self">
+                                                <h3>Amp</h3>
+                                                <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
+                                                <p>Installments:</p>
+                                                <h2>1/7</h2>
+                                            </div>
+                                            <div class="credit-cards-accounts-self">
+                                                <h3>Course</h3>
+                                                <img class="credit-cards-accounts-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
+                                                <p>Installments:</p>
+                                                <h2>4/12</h2>
+                                            </div>
+                                        </div>  
+                                    </div>
                                 </div>
                             </div>
                             
@@ -215,6 +237,7 @@
             <a href="https://github.com/yanferodrigues" target="_blank"><img src="assets/icons/github.png"></a>
             <a href="https://linkedin.com" target="_blank"><img src="assets/icons/linkedin.png"></a>
         </footer>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/finance.js"></script>
+        <script src="assets/js/general.js"></script>
     </body>
 </html>
