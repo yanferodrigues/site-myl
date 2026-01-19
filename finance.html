@@ -159,30 +159,35 @@
                         <div id="finance-credit" class="finance-page">
                             <div class="finance-credit-content">
                                 <aside class="credit-cards">
-                                    <div onclick="cardSelector('nubank-accounts')" id="nubank" class="self-card active">
+                                    <div onclick="cardSelector('nubank-accounts',this)" id="nubank" class="self-card active">
                                         Nubank
                                     </div>
-                                    <div id="inter" class="self-card">
+                                    <div onclick="cardSelector('inter-accounts',this)" id="inter" class="self-card">
                                         Inter
                                     </div>
-                                    <div id="bradesco" class="self-card">
+                                    <div onclick="cardSelector('bradesco-accounts',this)" id="bradesco" class="self-card">
                                         Bradesco
                                     </div>
-                                    <div id="sicredi"class="self-card">
+                                    <div onclick="cardSelector('sicredi-accounts',this)" id="sicredi"class="self-card">
                                         Sicredi
                                     </div>
-                                    <div id="picpay"class="self-card">
+                                    <div onclick="cardSelector('picpay-accounts',this)" id="picpay"class="self-card">
                                         Picpay
                                     </div>
-                                    <div id="banco do brasil" class="self-card">
+                                    <div onclick="cardSelector('bancodobrasil-accounts',this)" id="banco do brasil" class="self-card">
                                         Banco do brasil
                                     </div>
-                                    <div id="will" class="self-card">
+                                    <div onclick="cardSelector('will-accounts',this)" id="will" class="self-card">
                                         Will
                                     </div>
+                                    <div class="credit-cards-btns">
+                                        <button class="btn">Add credit card</button>
+                                        <button class="btn">Remove credit card</button>
+                                    </div>
+                                    
                                 </aside>
-                                <div id="nubank-accounts" class="credit-cards-main-content">
-                                    <div class="credit-cards-accounts active">
+                                <div class="credit-cards-main-content">
+                                    <div id="nubank-accounts" class="credit-cards-accounts active">
                                         <div class="credit-cards-all-accounts">
                                             <div class="credit-cards-accounts-self">
                                                 <h3>Phone</h3>
@@ -220,7 +225,37 @@
                                                 <p>Installments:</p>
                                                 <h2>4/12</h2>
                                             </div>
-                                        </div>  
+                                        </div> 
+                                    </div>
+                                    <div id="inter-accounts" class="credit-cards-accounts">
+                                        <div class="not-found">
+                                            ACCOUNTS NOT FOUND
+                                        </div>   
+                                    </div> 
+                                    <div id="bradesco-accounts" class="credit-cards-accounts">
+                                        <div class="not-found">
+                                            ACCOUNTS NOT FOUND
+                                        </div>   
+                                    </div>
+                                    <div id="sicredi-accounts" class="credit-cards-accounts">
+                                        <div class="not-found">
+                                            ACCOUNTS NOT FOUND
+                                        </div>    
+                                    </div>
+                                    <div id="picpay-accounts" class="credit-cards-accounts">
+                                        <div class="not-found">
+                                            ACCOUNTS NOT FOUND
+                                        </div>      
+                                    </div>
+                                    <div id="bancodobrasil-accounts" class="credit-cards-accounts">
+                                        <div class="not-found">
+                                            ACCOUNTS NOT FOUND
+                                        </div>     
+                                    </div>
+                                    <div id="will-accounts" class="credit-cards-accounts">
+                                        <div class="not-found">
+                                            ACCOUNTS NOT FOUND
+                                        </div>   
                                     </div>
                                 </div>
                             </div>

@@ -8,7 +8,11 @@ function tabSelector(id,tab) {
     tab.classList.add('active')
 }
 
-function cardSelector(id) {
+function cardSelector(id,idcard) {
     activeReportId = id;
-    
+    document.querySelectorAll(".credit-cards-accounts").forEach(card => {card.classList.remove('active')});
+    document.getElementById(id).classList.add('active')
+
+    document.querySelectorAll('.self-card').forEach(card => card.classList.remove('active'))
+    idcard.classList.add('active')
 }

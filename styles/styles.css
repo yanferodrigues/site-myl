@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,600;1,600&display=swap');
 :root{
     --bg:#fff9ed;
     --dark:#282935;
@@ -304,6 +304,17 @@ footer img{
     background-color: var(--text);
 }
 
+.not-found, .rest-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 800px;
+    color: #a9a9a9;
+    font-size: xx-large;
+}
+
 /************** FINANCE *****************/
 
 .specific-finance-top {
@@ -461,10 +472,20 @@ footer img{
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    gap: 20px;
+
 }
 .credit-cards-accounts.active {
     display: block;
     height: 100%;
+}
+
+.credit-cards-accounts {
+    display: none;
 }
 .credit-cards-main-content {
     display: flex;
@@ -490,7 +511,6 @@ footer img{
     align-items: center;
     border: solid #cacaca 1px;
     height: 50px;
-    margin: 20px;
     border-radius: 10px;
 }
 .self-card:hover, .self-card.active{
@@ -530,6 +550,10 @@ footer img{
     font-weight: 500;
     padding-top: 10px;
 
+}
+.credit-cards-btns {
+    display: flex;
+    gap: 3px;
 }
 /************** TASKS *****************/
 .specific-tasks {
