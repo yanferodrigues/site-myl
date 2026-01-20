@@ -155,6 +155,7 @@ nav a.active{
 .card{
     width:360px;
     height:300px;
+    color: #151515;
     background:#ffffff;
     border-radius:20px;
     padding:2rem;
@@ -465,10 +466,10 @@ footer img{
     display: flex;
     width: 100%;
     height: 800px;
-    justify-content: center;
-    align-items:center ;
+    justify-content: flex-start; 
+    align-items: stretch;        
 }
-.credit-cards {
+.credit-cards { 
     border:solid #cacaca 1px;
     width: 30%;
     height: 100%;
@@ -476,10 +477,10 @@ footer img{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     padding: 20px;
-    gap: 20px;
-
+    gap: 20px; 
+    flex-shrink: 0;
 }
 .credit-cards-accounts.active {
     display: block;
@@ -490,15 +491,18 @@ footer img{
 .credit-cards-accounts {
     display: none;
     width: 100%;
+    height: 100%;
 }
 .credit-cards-main-content {
     display: flex;
+    flex: 1;
     border:solid #cacaca 1px;
     border-left: 0px;
     width: 70%;
     height: 100%;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
 }
 .credit-cards-all-accounts {
     display: flex;
@@ -507,19 +511,20 @@ footer img{
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
 }
 .self-card {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border: solid #cacaca 1px;
     height: 50px;
+    width: 200px;
     border-radius: 10px;
 }
 .self-card:hover, .self-card.active{
+    color: white;
     background-color: var(--dark);
-    color: #fff;
 }
 .credit-cards-accounts-graph {
     width: 90%;
@@ -737,6 +742,39 @@ footer img{
     display: flex;
     justify-content: center;
 }
+.specific-gym-exercices {
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/************** ABOUT *****************/
+.about {  
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    min-width: 400px;
+    
+}
+.about-content {
+    background-color: var(--dark);
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    overflow-y: auto;
+    padding: 60px;
+    
+}
+.about-content p {
+    line-height: 1.7;
+}
 @media (max-width:1200px){
     main{
         flex-direction:column;
@@ -779,26 +817,22 @@ footer img{
         width: 80%;
     }
     .credit-cards {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 100px;
         width: 100%;
-        flex-wrap: wrap;
-        overflow-x: scroll;
-        height: 10%;
-        align-items: center;
-        justify-content: center;
-    }
-    .credit-cards-main-content {
-        width: 100%;
-        height: 800px;
     }
     .self-card {
-        width: 150px;
+        flex-shrink: 0;
+        width: 200px;
         align-items: center;
         justify-content: center;
     }
     .finance-credit-content {
         flex-direction: column;
         width: 100%;
-        height: 100%;
+        height: 800px;
     }
     
     #navegation {
@@ -836,7 +870,9 @@ footer img{
     }
     .credit-cards-main-content {
         border-left: solid 1px #cacaca;
-        border-top: 0px;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
     }
 }
 
