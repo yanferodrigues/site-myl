@@ -748,6 +748,13 @@ footer img{
     flex-direction: column;
     justify-content: center;
 }
+.specific-gym-btn {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /************** ABOUT *****************/
 .about {  
     display: flex;
@@ -794,6 +801,7 @@ footer img{
     background-color: white;
     height: 80%;
     width:50%;
+    min-width: 500px;
     border-radius: 15px;
     flex-direction: column;
 }
