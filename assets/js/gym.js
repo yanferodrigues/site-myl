@@ -1,19 +1,24 @@
-function addGymRowByButton() {
+function addGymRowByButton(button) {
+    const row = button.closest(".overlay-container-content-gym-exercises");
     const container = document.getElementById("gymExercisesContainer");
-    const rows = container.children;
-    const lastRow = rows[rows.length - 1];
 
-    const inputs = lastRow.querySelectorAll("input");
-    const isEmpty = [...inputs].every(input => input.value === "");
+    const newRow = row.cloneNode(true);
 
-    // se a última linha estiver vazia e houver mais de uma, remove
-    if (isEmpty && rows.length > 1) {
-        container.removeChild(lastRow);
-        return;
-    }
+    // limpa os inputs
+    newRow.querySelectorAll("input").forEach(input => {
+        input.value = "";
+    });
 
-    // cria nova linha
-    const newRow = lastRow.cloneNode(true);
-    newRow.querySelectorAll("input").forEach(i => i.value = "");
-    container.appendChild(newRow);
+    container.insertBefore(newRow, row.nextSibling);
 }
+
+function removeGymRowByButton(button) {
+    const row = button.closest(".overlay-container-content-gym-exercises");
+    const container = document.getElementById("gymExercisesContainer");
+
+    // impede apagar a última linha
+    if (container.children.length > 1) {
+        row.remove();
+    }
+}
+

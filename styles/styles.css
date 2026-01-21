@@ -915,17 +915,16 @@ footer img{
     overflow-y: auto;
     padding-bottom: 20px;
 }
-.overlay-container-content-gym-exercises button img {
-    height: 100%;
-}
+
 .overlay-container-content-gym-exercises button {
     height: 30px;
+    width: 30px;
     border-radius: 50px;
     border: 0;
     margin-left: 10px;
 }
 .overlay-container-content-gym-exercises button:hover {
-    border: solid #008e1a;
+    border: solid #6a6a6a 1px;
 }
 
 .gym-sets {
