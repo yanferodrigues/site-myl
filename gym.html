@@ -29,13 +29,16 @@
                     <img src="assets/icons/user.png">
                     <h5>USERNAME</h5>
                 </a>
-                <nav>
+                <nav id="navegation">
                     <a href="index.html"><img src="assets/icons/dashboard.png"><span>Dashboard</span></a>
                     <a href="finance.html"><img src="assets/icons/money.png"><span>Finance</span></a>
                     <a class="active"><img src="assets/icons/gym.png"><span>Gym</span></a>
                     <a href="tasks.html"><img src="assets/icons/checklist.png"><span>Tasks</span></a>
                 </nav>
             </aside>
+            <button onclick="openNav()" id="openNavegation">
+                <img src="assets/icons/down arrow.png" alt="down arrow">
+            </button>
 
             <section class="content-box">
                 <div class="content-title">
@@ -47,114 +50,236 @@
                         <div class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 MONDAY
+                                <button onclick="openOverlay('edit-workout-monday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
-                                <h4 class="specific-gym-exercices-title">Chest</h4>
-                                <div class="specific-gym-exercices-division">
+                            <div class="specific-gym-exercises">
+                                <h4 class="specific-gym-exercises-title">Chest</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 incline bench press</p>
                                     <p>4x12 straight bench press</p>
                                     <p>4x12 crucifix</p>
                                     <p>4x12 crossover</p>
                                 </div>
-                                <h4 class="specific-gym-exercices-title">Triceps</h4>
-                                <div class="specific-gym-exercices-division">
+                                <h4 class="specific-gym-exercises-title">Triceps</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 triceps extension with rope</p>
                                     <p>4x12 french triceps</p>
-                                    <p>4x12 tricep dipping machine</p>
+                                    <p>4x12 triceps dipping machine</p>
+                                </div>
+                            </div>
+                            <div id='edit-workout-monday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-monday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                        <div class="overlay-container-content-gym-form">
+                                            <h4 class="specific-gym-exercises-title">Chest</h4>
+                                            <div id="gymExercisesContainer">
+                                                <div class="overlay-container-content-gym-exercises">
+                                                    <input class="gym-sets" type="number" placeholder="Set:" autocomplete="off" >
+                                                    <span>x</span>
+                                                    <input class="gym-reps" type="number" placeholder="Rep:">
+                                                    <input class="gym-exercise" type="text" placeholder="Exercise:" autocomplete="off">
+                                                    <button type="button" onclick="addGymRowByButton()">
+                                                        <img src="assets/icons/mais.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button class="overlay-container-content-gym-add">
+                                            <img src="assets/icons/mais.png" alt="add">
+                                        </button>
+                                    </div>  
                                 </div>
                             </div>
                         </div>
-                        <div class="specific-gym-days">
+                        <div  class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 TUESDAY
+                                <button onclick="openOverlay('edit-workout-tuesday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
-                                <h4 class="specific-gym-exercices-title">Back</h4>
-                                <div class="specific-gym-exercices-division">
+                            <div class="specific-gym-exercises">
+                                <h4 class="specific-gym-exercises-title">Back</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 front pull wide</p>
                                     <p>4x12 closed front pull</p>
                                     <p>4x12 rowing</p>
                                     <p>4x12 pull-ups</p>
                                 </div>
-                                <h4 class="specific-gym-exercices-title">Biceps</h4>
-                                <div class="specific-gym-exercices-division">
+                                <h4 class="specific-gym-exercises-title">Biceps</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 wide grip</p>
                                     <p>4x12 narrow grip</p>
                                     <p>4x12 neutral grip</p>
+                                </div>
+                            </div>
+                            <div id='edit-workout-tuesday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-tuesday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 WEDNESDAY
+                                <button onclick="openOverlay('edit-workout-wednessday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
+                            <div class="specific-gym-exercises">
                                 <div class="rest-day">
                                     REST DAY
+                                </div>
+                            </div>
+                            <div id='edit-workout-wednessday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-wednessday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 THURSDAY
+                                <button onclick="openOverlay('edit-workout-thursday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
-                                <h4 class="specific-gym-exercices-title">Leg</h4>
-                                <div class="specific-gym-exercices-division">
+                            <div class="specific-gym-exercises">
+                                <h4 class="specific-gym-exercises-title">Leg</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 squat</p>
                                     <p>4x12 leg press</p>
                                     <p>4x12 extension chair</p>
                                     <p>4x12 abduction chair</p>
                                 </div>
                             </div>
+                            <div id='edit-workout-thursday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-thursday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                            
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 FRIDAY
+                                <button onclick="openOverlay('edit-workout-friday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
-                                <h4 class="specific-gym-exercices-title">Shoulders</h4>
-                                <div class="specific-gym-exercices-division">
+                            <div class="specific-gym-exercises">
+                                <h4 class="specific-gym-exercises-title">Shoulders</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 lateral raises</p>
                                     <p>4x12 front raises</p>
                                     <p>4x12 shoulder press</p>
                                     <p>4x12 face pull</p>
                                 </div>
-                                <h4 class="specific-gym-exercices-title">Cardio</h4>
-                                <div class="specific-gym-exercices-division">
+                                <h4 class="specific-gym-exercises-title">Cardio</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>30 min treadmill</p>
+                                </div>
+                            </div>
+                            <div id='edit-workout-friday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-friday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 SATURDAY
+                                <button onclick="openOverlay('edit-workout-saturday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
-                                <h4 class="specific-gym-exercices-title">Triceps</h4>
-                                <div class="specific-gym-exercices-division">
+                            <div class="specific-gym-exercises">
+                                <h4 class="specific-gym-exercises-title">Triceps</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 triceps extension with rope</p>
                                     <p>4x12 french triceps</p>
                                 </div>
-                                <h4 class="specific-gym-exercices-title">Biceps</h4>
-                                <div class="specific-gym-exercices-division">
+                                <h4 class="specific-gym-exercises-title">Biceps</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 narrow grip</p>
                                     <p>4x12 neutral grip</p>
                                 </div>
-                                <h4 class="specific-gym-exercices-title">Shoulders</h4>
-                                <div class="specific-gym-exercices-division">
+                                <h4 class="specific-gym-exercises-title">Shoulders</h4>
+                                <div class="specific-gym-exercises-division">
                                     <p>4x12 shoulder press</p>
                                     <p>4x12 face pull</p>
+                                </div>
+                            </div>
+                            <div id='edit-workout-saturday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-saturday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="specific-gym-days">
                             <div class="specific-gym-days-title">
                                 SUNDAY
+                                <button onclick="openOverlay('edit-workout-sunday')" class="specific-gym-days-title-btn">
+                                    <img src="assets/icons/edit.png" alt="adicionar">
+                                </button>
                             </div>
-                            <div class="specific-gym-exercices">
+                            <div class="specific-gym-exercises">
                                 <div class="rest-day">
                                     REST DAY
+                                </div>
+                            </div>
+                            <div id='edit-workout-sunday' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('edit-workout-sunday')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -167,6 +292,7 @@
             <a href="https://github.com/yanferodrigues" target="_blank"><img src="assets/icons/github.png"></a>
             <a href="https://linkedin.com" target="_blank"><img src="assets/icons/linkedin.png"></a>
         </footer>
-
+        <script src="assets/js/general.js"></script>
+        <script src="assets/js/gym.js"></script>
     </body>
 </html>
