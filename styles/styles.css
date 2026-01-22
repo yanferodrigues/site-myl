@@ -819,7 +819,7 @@ footer img{
     background-color: white;
     height: 80%;
     width:50%;
-    min-width: 500px;
+    min-width: 480px;
     border-radius: 15px;
     flex-direction: column;
 }
@@ -835,6 +835,7 @@ footer img{
     border-bottom-left-radius: 15px;
     height: 40px;
     width: 40px;
+    border: solid 1px;
 }
 .close-overlay-btn:hover{
     background-color: rgb(199, 61, 61);
@@ -848,7 +849,7 @@ footer img{
     height: 92%;
     justify-content: start;
     align-items: center;
-    overflow-y: auto;
+    overflow-y: scroll;
     
 }
 .overlay-container-content-save {
@@ -945,6 +946,7 @@ footer img{
     width: 80%;
     border: solid #cacaca 1px;
     overflow-y: auto;
+    padding: 10px;
 }
 
 .overlay-container-content-gym-exercises button {
@@ -1118,6 +1120,11 @@ footer img{
         width: 100%;
         height: 100%;
     }
+    .overlay-container-content-gym-form {
+
+    width: 95%;
+
+    }   
 }
 
 
