@@ -77,29 +77,38 @@
                                         </button>
                                     </div>
                                     <div class="overlay-container-content">
-                                        <div class="overlay-container-content-gym-form">
-                                            <h4 class="specific-gym-exercises-title">Chest</h4>
-                                            <div id="gymExercisesContainer">
-                                                <div class="overlay-container-content-gym-exercises">
-                                                    <input class="gym-sets" type="number" placeholder="Set:" autocomplete="off" >
-                                                    <span>x</span>
-                                                    <input class="gym-reps" type="number" placeholder="Rep:">
-                                                    <input class="gym-exercise" type="text" placeholder="Exercise:" autocomplete="off">
-                                                    
-
-                                                    <button type="button" onclick="removeGymRowByButton(this)">
+                                        <div id="overlay-gym-general-forms">
+                                            <div class="overlay-container-content-gym-form">
+                                                <div class="close-gym-form">
+                                                    <button>
                                                         -
                                                     </button>
-                                                    <button type="button" onclick="addGymRowByButton(this)">
-                                                        +
-                                                    </button>
                                                 </div>
-                                                
+                                                <input class="overlay-container-content-gym-form-title" type="text" placeholder="Title:">
+                                                <div id="gymExercisesContainer">
+                                                    <div class="overlay-container-content-gym-exercises">
+                                                        <input class="gym-sets" type="number" placeholder="Set:" autocomplete="off" >
+                                                        <span>x</span>
+                                                        <input class="gym-reps" type="number" placeholder="Rep:">
+                                                        <input class="gym-exercise" type="text" placeholder="Exercise:" autocomplete="off">
+                                                        <button type="button" onclick="removeGymRowByButton(this)">
+                                                            -
+                                                        </button>
+                                                        <button type="button" onclick="addGymRowByButton(this)">
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         
-                                        <button class="overlay-container-content-gym-add">
+                                        <button onclick="addNewForm()" class="overlay-container-content-gym-add">
                                             <img src="assets/icons/mais.png" alt="add">
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content-save">
+                                        <button>
+                                            Save
                                         </button>
                                     </div>  
                                 </div>

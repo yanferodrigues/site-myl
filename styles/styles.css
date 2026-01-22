@@ -735,6 +735,10 @@ footer img{
     justify-content: center;
     align-items: center;
     height: 22px;
+    border: 0;
+}
+.specific-gym-days-title-btn:hover {
+    border: solid #48a4ff 2px;
 }
 .specific-gym-days-title-btn img{
     height: 100%;
@@ -834,16 +838,39 @@ footer img{
 }
 .close-overlay-btn:hover{
     background-color: rgb(199, 61, 61);
+    color: white;
 }
 
 .overlay-container-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 92%;
     justify-content: start;
     align-items: center;
+    overflow-y: auto;
     
+}
+.overlay-container-content-save {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+.overlay-container-content-save button {
+    width: 60px;
+    height: 30px;
+    margin: 15px;
+    margin-top: 10px;
+    background-color: #48a4ff;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.overlay-container-content-save button:hover {
+    border:solid #2972bb 2px;
+
 }
 
 /**TASKS**/
@@ -907,13 +934,17 @@ footer img{
 }
 
 .overlay-container-content-gym-form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     min-height: 200px;
     height: 400px;
     margin: 20px;
     width: 80%;
     border: solid #cacaca 1px;
     overflow-y: auto;
-    padding-bottom: 20px;
 }
 
 .overlay-container-content-gym-exercises button {
@@ -929,16 +960,15 @@ footer img{
 
 .gym-sets {
     border-radius: 5px;
-    border: solid #000000 1px;
+    border: solid #b2b2b2 1px;
     width: 50px;
     height: 30px;
     margin-right: 5px;
     padding-left: 5px;
-    
 }
 .gym-reps {
     border-radius: 5px;
-    border: solid #000000 1px;
+    border: solid #b2b2b2 1px;
     width: 50px;
     height: 30px;
     margin-left: 5px;
@@ -946,14 +976,48 @@ footer img{
 }
 .gym-exercise {
     border-radius: 5px;
-    border: solid #000000 1px;
+    border: solid #b2b2b2 1px;
     width: 200px;
     height: 30px;
     margin-left: 10px;
     padding-left: 5px;
     padding-right: 5px;
 }
+#overlay-gym-general-forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.overlay-container-content-gym-form-title {
+    border-radius: 5px;
+    border: solid #8d8d8d 2px;
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.close-gym-form {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
 
+.close-gym-form button{
+    height: 30px;
+    width: 30px;
+    border:1px solid #000000;
+    margin-left: 10px;
+}
+.close-gym-form button:hover{
+    background-color: rgb(199, 61, 61);
+    color: white;
+}
 
 @media (max-width:1200px){
     main{

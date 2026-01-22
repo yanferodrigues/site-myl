@@ -4,7 +4,6 @@ function addGymRowByButton(button) {
 
     const newRow = row.cloneNode(true);
 
-    // limpa os inputs
     newRow.querySelectorAll("input").forEach(input => {
         input.value = "";
     });
@@ -16,9 +15,24 @@ function removeGymRowByButton(button) {
     const row = button.closest(".overlay-container-content-gym-exercises");
     const container = document.getElementById("gymExercisesContainer");
 
-    // impede apagar a última linha
     if (container.children.length > 1) {
         row.remove();
     }
+}
+
+function addNewForm() {
+    const container = document.getElementById("overlay-gym-general-forms");
+    const form = container.querySelector(".overlay-container-content-gym-form");
+    const newForm = form.cloneNode(true);
+
+    newForm.querySelectorAll("input").forEach(input => {
+        input.value = "";
+    });
+
+    newForm.querySelectorAll("[id]").forEach(el => {
+        el.removeAttribute("id");
+    });
+
+    container.appendChild(newForm);
 }
 
