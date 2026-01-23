@@ -15,6 +15,7 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
+    font-family: var(--font);
 }
 
 img{
@@ -296,6 +297,7 @@ footer img{
     font-size: 15px;
     width: 80%;
     gap:10px;
+    cursor: pointer;
 }
 
 .btn img{
@@ -446,6 +448,7 @@ footer img{
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: var(--font) bold;
+    cursor: pointer;
 }
 .finance-tab:hover , .finance-tab.active{
     background-color: var(--dark);
@@ -522,6 +525,7 @@ footer img{
     height: 50px;
     width: 200px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .self-card:hover, .self-card.active{
     color: white;
@@ -540,6 +544,7 @@ footer img{
     border: 1px #cacaca solid;
     margin: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
 
 }
 .credit-cards-accounts-self h3{
@@ -736,6 +741,7 @@ footer img{
     align-items: center;
     height: 22px;
     border: 0;
+    cursor: pointer;
 }
 .specific-gym-days-title-btn:hover {
     border: solid #48a4ff 2px;
@@ -813,6 +819,7 @@ footer img{
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    
 }
 .overlay-container {
     display: flex;
@@ -868,6 +875,7 @@ footer img{
     color: white;
     border: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 .overlay-container-content-save button:hover {
     border:solid #2972bb 2px;
@@ -955,6 +963,7 @@ footer img{
     border-radius: 50px;
     border: 0;
     margin-left: 10px;
+    cursor: pointer;
 }
 .overlay-container-content-gym-exercises button:hover {
     border: solid #6a6a6a 1px;
@@ -1015,6 +1024,7 @@ footer img{
     width: 30px;
     border:1px solid #000000;
     margin-left: 10px;
+    cursor: pointer;
 }
 .close-gym-form button:hover{
     background-color: rgb(199, 61, 61);
