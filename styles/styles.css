@@ -231,6 +231,7 @@ footer{
     justify-content:flex-end;
     padding:1rem;
     gap:.8rem;
+
 }
 
 footer img{
@@ -364,21 +365,16 @@ footer img{
     font-family: Impact, Haettenschweiler,;
 }
 
-.specific-finance-main {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    gap: 5%;
-}
 
-.specific-finance-main-left {
+
+.specific-finance-main {
     display: flex;
     overflow-y:auto;
     overflow-x: hidden;
     flex-direction: column;
     align-items: center;
     border: solid 1px #cacaca; 
-    width: 80%;
+    width: 100%;
     height: 700px;
     padding: 1%;
     gap: 70px;
@@ -395,20 +391,20 @@ footer img{
     gap: 50px;
     padding-top: 70px;
 }
-.specific-finance-main-left-history{
+.specific-finance-main-history{
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.specific-finance-main-left-history-self{
+.specific-finance-main-history-self{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     
 }
-.specific-finance-main-left-history-value{
+.specific-finance-main-history-value{
     display: flex;
     width: 90%;
     align-items: center;
@@ -417,7 +413,7 @@ footer img{
     padding: 20px;
     text-shadow: var(--shadow);
 }
-.specific-finance-main-left-graph{
+.specific-finance-main-graph{
     display: flex;
     justify-content: center;
     width: 50%;
@@ -506,7 +502,7 @@ footer img{
     height: 100%;
     align-items: flex-start;
     justify-content: flex-start;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .credit-cards-all-accounts {
     display: flex;
@@ -514,7 +510,7 @@ footer img{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .self-card {
     display: flex;
@@ -819,7 +815,6 @@ footer img{
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    
 }
 .overlay-container {
     display: flex;
@@ -856,7 +851,7 @@ footer img{
     height: 92%;
     justify-content: start;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
     
 }
 .overlay-container-content-save {
@@ -1031,6 +1026,15 @@ footer img{
     color: white;
 }
 
+/*****FINANCE*****/
+#report-income {
+    display: none;
+}
+
+.credit-self-account {
+    display: none;
+}
+
 @media (max-width:1200px){
     main{
         flex-direction:column;
@@ -1113,15 +1117,9 @@ footer img{
     .content-box {
         margin-top: 1rem;
     }
+
+    
     .specific-finance-main {
-        flex-direction: column-reverse;
-    }
-    .specific-finance-main-right {
-        flex-direction: row;
-        width: auto;
-        padding-top: 2rem;
-    }
-    .specific-finance-main-left {
         width: 100%;
     }
     .credit-cards-main-content {

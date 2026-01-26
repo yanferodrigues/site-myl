@@ -7,9 +7,13 @@ function openNav() {
 }
 
 function openOverlay(id) {
-    document.getElementById(id).style.display = "flex"
+    document.getElementById(id).style.display = "flex";
 }
 
 function closeOverlay(id) {
-    document.getElementById(id).style.display = "none"
+    document.getElementById(id).style.display = "none";
+}
+
+function openOverlayClass(cl) {
+    document.querySelector(`.${cl}`).style.display = "flex";
 }
