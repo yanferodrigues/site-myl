@@ -354,10 +354,12 @@ footer img{
 
 .specific-finance-top-income:hover{
     box-shadow: 0px 0px 16px #79ff79;
+    cursor:pointer;
 }
 
 .specific-finance-top-expenses:hover{
     box-shadow: 0px 0px 16px #ffa9a9;
+    cursor:pointer;
 }
 
 .specific-finance-top-values{
@@ -1028,6 +1030,9 @@ footer img{
 
 /*****FINANCE*****/
 #report-income {
+    display: none;
+}
+#report-expenses {
     display: none;
 }
 

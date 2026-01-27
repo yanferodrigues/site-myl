@@ -85,7 +85,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <section class="specific-finance-top-expenses">
+                                    <section onclick="openOverlay('report-expenses')" class="specific-finance-top-expenses">
                                         <div class="specific-finance-top-title">
                                             <img src="assets/icons/menos.png" alt="">
                                             <h4>Expenses</h4>
@@ -94,6 +94,18 @@
                                             <p>$ 1.250,00</p>
                                         </div>
                                     </section>
+                                    <div class="overlay" id='report-expenses' >
+                                        <div class="overlay-container">
+                                            <div class="close-overlay">
+                                                <button onclick="closeOverlay('report-expenses')" class="close-overlay-btn">
+                                                    X
+                                                </button>
+                                            </div>
+                                            <div class="overlay-container-content">
+                                                 
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="specific-finance-main">
                                     <div class="specific-finance-main-title">
@@ -217,7 +229,9 @@
                                                         </button>
                                                     </div>
                                                     <div class="overlay-container-content">
-                                                        
+                                                        <div>
+                                                            
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
