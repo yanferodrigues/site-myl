@@ -16,3 +16,6 @@ function cardSelector(id,idcard) {
     document.querySelectorAll('.self-card').forEach(card => card.classList.remove('active'))
     idcard.classList.add('active')
 }
+
+let activeButton = null;
+

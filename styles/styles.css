@@ -368,7 +368,6 @@ footer img{
 }
 
 
-
 .specific-finance-main {
     display: flex;
     overflow-y:auto;
@@ -1001,7 +1000,7 @@ footer img{
 }
 .overlay-container-content-gym-form-title {
     border-radius: 5px;
-    border: solid #8d8d8d 2px;
+    border: solid #474747 2px;
     width: 150px;
     height: 30px;
     margin-right: 5px;
@@ -1032,6 +1031,9 @@ footer img{
 #report-income {
     display: none;
 }
+#report-income .overlay-container{
+    width: 200px;
+}
 #report-expenses {
     display: none;
 }
@@ -1039,6 +1041,7 @@ footer img{
 .credit-self-account {
     display: none;
 }
+
 
 @media (max-width:1200px){
     main{
