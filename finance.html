@@ -74,7 +74,7 @@
                                         </div>
                                     </section>
                                     <div class="overlay" id='report-incomes' >
-                                        <div class="overlay-container">
+                                        <div class="overlay-container" id="report-incomes-container">
                                             <div class="close-overlay">
                                                 <button onclick="closeOverlay('report-incomes')" class="close-overlay-btn">
                                                     X
@@ -82,8 +82,9 @@
                                             </div>
                                             <div class="overlay-container-content">
                                                 <div class="finance-reports-overlay">
+                                                    <h3>REPORT INCOMES</h3>
                                                     <select>
-                                                        <option disabled hidden selected>Type:</option>
+                                                        <option></option>
                                                         <option>Bills</option>
                                                         <option>Food</option>
                                                         <option>Transport</option>
@@ -95,8 +96,8 @@
                                                         <option>Travel</option>
                                                     </select>
                                                     <input placeholder="Value:" type="text">
-                                                    <input placeholder="Time:" type="datetime">
-                                                    <input placeholder="Descrition" type="text">
+                                                    <input placeholder="Date:" type="datetime">
+                                                    <input placeholder="Description:" type="text">
                                                 </div>
                                             </div>
                                         </div>
@@ -112,14 +113,31 @@
                                         </div>
                                     </section>
                                     <div class="overlay" id='report-expenses' >
-                                        <div class="overlay-container">
+                                        <div class="overlay-container" id="report-expenses-container">
                                             <div class="close-overlay">
                                                 <button onclick="closeOverlay('report-expenses')" class="close-overlay-btn">
                                                     X
                                                 </button>
                                             </div>
                                             <div class="overlay-container-content">
-                                                 
+                                                 <div class="finance-reports-overlay">
+                                                    <h3>REPORT EXPENSES</h3>
+                                                    <select>
+                                                        <option></option>
+                                                        <option>Bills</option>
+                                                        <option>Food</option>
+                                                        <option>Transport</option>
+                                                        <option>Health</option>
+                                                        <option>Leisure</option>
+                                                        <option>Education</option>
+                                                        <option>Personal</option>
+                                                        <option>Invests</option>
+                                                        <option>Travel</option>
+                                                    </select>
+                                                    <input placeholder="Value:" type="text">
+                                                    <input placeholder="Date:" type="datetime">
+                                                    <input placeholder="Description:" type="text">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -187,6 +205,7 @@
                         <div id="finance-credit" class="finance-page">
                             <div class="finance-credit-content">
                                 <aside class="credit-cards">
+                                    
                                     <div onclick="cardSelector('nubank-accounts',this)" id="nubank" class="self-card active">
                                         Nubank
                                     </div>
@@ -208,6 +227,9 @@
                                     <div onclick="cardSelector('will-accounts',this)" id="will" class="self-card">
                                         Will
                                     </div>
+                                    <button class="add-credit-card-account">
+                                        +
+                                    </button>
                                     
                                 </aside>
                                 
@@ -228,7 +250,52 @@
                                                         </button>
                                                     </div>
                                                     <div class="overlay-container-content">
-                                                        
+                                                        <div class="credit-self-account-overlay-content">
+                                                            <img class="credit-self-account-overlay-content-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
+                                                            <div class="credit-self-account-overlay-content-payed">
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>1/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>2/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>3/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>4/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>5/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>6/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>7/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>8/10</p>
+                                                                    <p>payed</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>9/10</p>
+                                                                    <p>pendent</p>
+                                                                </div>
+                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                    <p>10/10</p>
+                                                                    <p>pendent</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

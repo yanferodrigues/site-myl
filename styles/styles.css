@@ -524,6 +524,24 @@ footer img{
     border-radius: 10px;
     cursor: pointer;
 }
+.add-credit-card-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #cacaca 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #008e1a;
+    min-width: 35px;
+    min-height: 35px;
+    font-weight: 700;
+    color: white;
+    font-size: medium;
+    padding-bottom: 5px;
+}
+.add-credit-card-account:hover {
+    border: solid 3px #007e17;
+}
 .self-card:hover, .self-card.active{
     color: white;
     background-color: var(--dark);
@@ -825,6 +843,7 @@ footer img{
     min-width: 480px;
     border-radius: 15px;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 .close-overlay {
     display: flex;
@@ -1030,7 +1049,13 @@ footer img{
 /*****FINANCE*****/
 #report-incomes {
     display: none;
+
 }
+#report-incomes-container , #report-expenses-container{
+    height: 500px;
+    max-width: 30%;
+}
+
 #report-incomes .overlay-container{
     width: 40%;
     min-width: 350px;
@@ -1041,6 +1066,59 @@ footer img{
 
 .credit-self-account {
     display: none;
+}
+.finance-reports-overlay {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+
+}
+.finance-reports-overlay h3{
+    text-decoration: none;
+    font-weight: 400;
+}
+.finance-reports-overlay input, .finance-reports-overlay select {
+    width: 80%;
+    height: 60px;
+    border: solid 1px #cacaca;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.finance-reports-overlay input::placeholder {
+    color: #acacac;
+}
+
+.credit-self-account-overlay-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 30px;
+}
+.credit-self-account-overlay-content-graph{
+    width: 50%;
+    min-width: 300px;
+}
+.credit-self-account-overlay-content-payed {
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.credit-self-account-overlay-content-payed-instalments {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 10px;
 }
 
 
