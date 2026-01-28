@@ -64,7 +64,7 @@
                                         </div>
                                     </section>
 
-                                    <section class="specific-finance-top-income">
+                                    <section onclick="openOverlay('report-incomes')" class="specific-finance-top-income">
                                         <div class="specific-finance-top-title">
                                             <img src="assets/icons/mais.png" alt="">
                                             <h4>Income</h4>
@@ -73,6 +73,34 @@
                                             <p>$ 1.800,00</p>
                                         </div>
                                     </section>
+                                    <div class="overlay" id='report-incomes' >
+                                        <div class="overlay-container">
+                                            <div class="close-overlay">
+                                                <button onclick="closeOverlay('report-incomes')" class="close-overlay-btn">
+                                                    X
+                                                </button>
+                                            </div>
+                                            <div class="overlay-container-content">
+                                                <div class="finance-reports-overlay">
+                                                    <select>
+                                                        <option disabled hidden selected>Type:</option>
+                                                        <option>Bills</option>
+                                                        <option>Food</option>
+                                                        <option>Transport</option>
+                                                        <option>Health</option>
+                                                        <option>Leisure</option>
+                                                        <option>Education</option>
+                                                        <option>Personal</option>
+                                                        <option>Invests</option>
+                                                        <option>Travel</option>
+                                                    </select>
+                                                    <input placeholder="Value:" type="text">
+                                                    <input placeholder="Time:" type="datetime">
+                                                    <input placeholder="Descrition" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <section onclick="openOverlay('report-expenses')" class="specific-finance-top-expenses">
                                         <div class="specific-finance-top-title">

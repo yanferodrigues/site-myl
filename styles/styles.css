@@ -1028,11 +1028,12 @@ footer img{
 }
 
 /*****FINANCE*****/
-#report-income {
+#report-incomes {
     display: none;
 }
-#report-income .overlay-container{
-    width: 200px;
+#report-incomes .overlay-container{
+    width: 40%;
+    min-width: 350px;
 }
 #report-expenses {
     display: none;
