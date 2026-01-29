@@ -1090,7 +1090,7 @@ footer img{
     text-transform: uppercase;
 }
 .finance-reports-overlay input::placeholder {
-    color: #acacac;
+    color: #585858;
 }
 
 .credit-self-account-overlay-content {
@@ -1111,14 +1111,38 @@ footer img{
     height:auto;
     width: 100%;
     padding: 20px;
-    gap: 10px;
+    gap: 2px;
     padding-bottom: 10px;
+}
+.credit-self-account-overlay-content-payed-instalments.payed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #afffbe;
+    height: 50px;
+    box-shadow: var(--shadow);
+}
+.credit-self-account-overlay-content-payed-instalments.payed:hover {
+    background-color: #9fe9ad;
 }
 .credit-self-account-overlay-content-payed-instalments {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #cacaca;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f4ff96;
+    height: 50px;
+    box-shadow: var(--shadow);
+}
+.credit-self-account-overlay-content-payed-instalments:hover {
+    background-color: #eded79;
 }
 
 
