@@ -470,7 +470,7 @@ footer img{
     justify-content: flex-start; 
     align-items: stretch;        
 }
-.credit-cards { 
+#credit-cards { 
     border:solid #cacaca 1px;
     width: 30%;
     height: 100%;
@@ -494,7 +494,7 @@ footer img{
     width: 100%;
     height: 100%;
 }
-.credit-cards-main-content {
+#credit-cards-main-content {
     display: flex;
     flex: 1;
     border:solid #cacaca 1px;
@@ -523,6 +523,16 @@ footer img{
     width: 200px;
     border-radius: 10px;
     cursor: pointer;
+    font-size: large;
+    text-transform: capitalize;
+}
+.new-self-card {
+    border: solid #cacaca 1px;
+    min-height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
 }
 .add-credit-card-account {
     display: flex;
@@ -1187,7 +1197,7 @@ footer img{
         flex-direction: row;
         width: 80%;
     }
-    .credit-cards {
+    #credit-cards {
         flex-direction: row;
         overflow-x: auto;
         overflow-y: hidden;
@@ -1233,7 +1243,7 @@ footer img{
     .specific-finance-main {
         width: 100%;
     }
-    .credit-cards-main-content {
+    #credit-cards-main-content {
         border-left: solid 1px #cacaca;
         overflow-y: scroll;
         width: 100%;

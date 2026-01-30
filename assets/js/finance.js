@@ -19,3 +19,54 @@ function cardSelector(id,idcard) {
 
 let activeButton = null;
 
+function addSelfCard(button) {
+    const allCards = document.getElementById("credit-cards");
+    const existingInput = allCards.querySelector(".new-self-card");
+
+    const allCardsContents = document.getElementById("credit-cards-main-content");
+    
+    
+    
+    if (existingInput) {
+        if (existingInput.value.trim() !== "") {
+            const div = document.createElement("div");
+            div.className = "self-card";
+            div.textContent = existingInput.value;
+            
+
+            allCards.replaceChild(div, existingInput);
+
+            const selfContent = allCardsContents.lastElementChild.cloneNode(true);
+            selfContent.id = `${existingInput.value}-accounts`;
+            div.setAttribute("onclick", `cardSelector("${selfContent.id}",this)`);
+            allCardsContents.appendChild(selfContent);
+            
+        } else {
+            existingInput.remove();
+        }
+    }
+    const input = document.createElement("input");
+    input.type = "text";
+    input.className = "new-self-card";
+
+    allCards.insertBefore(input, button);
+    input.focus();
+
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            const div = document.createElement("div");
+            div.className = "self-card";
+            div.id = input.value.toLowerCase();
+            div.textContent = input.value
+
+            allCards.replaceChild(div, input);
+
+            const selfContent = allCardsContents.lastElementChild.cloneNode(true);
+            selfContent.id = `${input.value}-accounts`;
+            div.setAttribute("onclick", `cardSelector("${selfContent.id}",this)`);
+            allCardsContents.appendChild(selfContent);
+        };
+    })
+}
+    
+

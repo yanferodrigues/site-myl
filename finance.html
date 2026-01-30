@@ -204,7 +204,7 @@
                         </div>  
                         <div id="finance-credit" class="finance-page">
                             <div class="finance-credit-content">
-                                <aside class="credit-cards">
+                                <aside id="credit-cards">
                                     
                                     <div onclick="cardSelector('nubank-accounts',this)" id="nubank" class="self-card active">
                                         Nubank
@@ -227,13 +227,13 @@
                                     <div onclick="cardSelector('will-accounts',this)" id="will" class="self-card">
                                         Will
                                     </div>
-                                    <button class="add-credit-card-account">
+                                    <button onclick="addSelfCard(this)" class="add-credit-card-account">
                                         +
                                     </button>
                                     
                                 </aside>
                                 
-                                <div class="credit-cards-main-content">
+                                <div id="credit-cards-main-content">
                                     <div id="nubank-accounts" class="credit-cards-accounts active">
                                         <div class="credit-cards-all-accounts">
                                             <div onclick="openOverlay('credit-self-account-phone')" class="credit-cards-accounts-self">
