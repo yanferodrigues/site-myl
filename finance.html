@@ -98,6 +98,8 @@
                                                     <input placeholder="Value:" type="text">
                                                     <input placeholder="Date:" type="datetime">
                                                     <input placeholder="Description:" type="text">
+                                                    <button class="btn-add">Add</button>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -137,6 +139,7 @@
                                                     <input placeholder="Value:" type="text">
                                                     <input placeholder="Date:" type="datetime">
                                                     <input placeholder="Description:" type="text">
+                                                    <button class="btn-remove">Remove</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -227,8 +230,8 @@
                                     <div onclick="cardSelector('will-accounts',this)" id="will" class="self-card">
                                         Will
                                     </div>
-                                    <button onclick="addSelfCard(this)" class="add-credit-card-account">
-                                        +
+                                    <button onclick="addSelfCard(this)" class="btn-add">
+                                        Add
                                     </button>
                                     
                                 </aside>
@@ -254,45 +257,45 @@
                                                             <h3>Phone Installments</h3>
                                                             <img class="credit-self-account-overlay-content-graph" src="assets/auxiliar/Grafico-de-Progresso-11.png" alt="graph">
                                                             <div class="credit-self-account-overlay-content-payed">
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>1/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>2/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>3/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>4/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>5/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>6/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>7/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments payed">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments payed">
                                                                     <p>8/10</p>
-                                                                    <p>payed</p>
+                                                                    <p>Payed</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments">
                                                                     <p>9/10</p>
-                                                                    <p>pendent</p>
+                                                                    <p>Pendent</p>
                                                                 </div>
-                                                                <div class="credit-self-account-overlay-content-payed-instalments">
+                                                                <div onclick="setState(this)" class="credit-self-account-overlay-content-payed-instalments">
                                                                     <p>10/10</p>
-                                                                    <p>pendent</p>
+                                                                    <p>Pendent</p>
                                                                 </div>
 
                                                             </div>

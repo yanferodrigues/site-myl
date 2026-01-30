@@ -240,6 +240,59 @@ footer img{
     filter:brightness(0) invert(1);
 }
 
+.btn-save {
+    min-width: 60px;
+    max-width: 100px;
+    min-height: 30px;
+    background-color: #48a4ff;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+.btn-save:hover {
+    border:solid #2972bb 2px;
+
+}
+.btn-add {
+    min-width: 60px;
+    max-width: 100px;
+    min-height: 30px;
+    margin: 15px;
+    margin-top: 10px;
+    background-color: #44b82d;
+    color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-add:hover {
+    border:solid #0a6d17 2px;
+
+}
+.btn-remove {
+    min-width: 60px;
+    max-width: 100px;
+    min-height: 30px;
+    margin: 15px;
+    margin-top: 10px;
+    background-color: #c72727;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+.btn-remove:hover {
+    border:solid #850000 2px;
+
+}
 
 /************** SPECIFIC *****************/
 .content-box{
@@ -285,28 +338,6 @@ footer img{
 .content-title img{
     height:28px;
     width: 28px;
-}
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--dark);
-    color: var(--light);
-    height: 60px;
-    border-radius: 15px;
-    font-family: var(--font) bold;
-    font-size: 15px;
-    width: 80%;
-    gap:10px;
-    cursor: pointer;
-}
-
-.btn img{
-    height: 20px;
-}
-
-.btn:hover {
-    background-color: var(--text);
 }
 
 .not-found, .rest-day {
@@ -607,7 +638,7 @@ footer img{
 .specific-tasks-main {
     width: 90%;
     display: flex;
-    gap:40px;
+    
     justify-content: center;
 }
 .specific-tasks-title {
@@ -724,10 +755,12 @@ footer img{
 .specific-tasks-main-btns {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+}
+.specific-tasks-main-btns button{
+    min-width: 100px;
 }
 
 /************** GYM *****************/
@@ -782,6 +815,7 @@ footer img{
     color: #676767;
     padding: 23px;
     max-width: auto;
+    min-height: 120px;
     border-bottom: #cacaca 1px solid;
     margin: 10px;
 }
@@ -796,6 +830,7 @@ footer img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .specific-gym-btn {
     width: 400px;
@@ -891,21 +926,7 @@ footer img{
     justify-content: end;
     
 }
-.overlay-container-content-save button {
-    width: 60px;
-    height: 30px;
-    margin: 15px;
-    margin-top: 10px;
-    background-color: #48a4ff;
-    color: white;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.overlay-container-content-save button:hover {
-    border:solid #2972bb 2px;
 
-}
 
 /**TASKS**/
 
@@ -1069,6 +1090,7 @@ footer img{
 #report-incomes .overlay-container{
     width: 40%;
     min-width: 350px;
+    padding-bottom: 30px;
 }
 #report-expenses {
     display: none;

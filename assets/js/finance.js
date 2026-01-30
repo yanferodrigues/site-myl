@@ -69,4 +69,12 @@ function addSelfCard(button) {
     })
 }
     
-
+function setState(btn) {
+    btn.classList.toggle("payed");
+    if (btn.lastElementChild.textContent === "Payed") {
+        btn.lastElementChild.textContent = "Pendent"
+    }
+    else {
+        btn.lastElementChild.textContent = "Payed"
+    }
+}
