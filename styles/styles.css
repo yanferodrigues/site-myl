@@ -244,6 +244,8 @@ footer img{
     min-width: 60px;
     max-width: 100px;
     min-height: 30px;
+    margin: 10px;
+    margin-top: 10px;
     background-color: #48a4ff;
     color: white;
     border: 0;
@@ -282,12 +284,13 @@ footer img{
     min-height: 30px;
     margin: 15px;
     margin-top: 10px;
-    background-color: #c72727;
+    background-color: #de3636;
     color: white;
     border: 0;
     border-radius: 10px;
     cursor: pointer;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .btn-remove:hover {
     border:solid #850000 2px;
@@ -888,7 +891,6 @@ footer img{
     min-width: 480px;
     border-radius: 15px;
     flex-direction: column;
-    padding-bottom: 10px;
 }
 .close-overlay {
     display: flex;
@@ -921,10 +923,9 @@ footer img{
 }
 .overlay-container-content-save {
     height: 60px;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: end;
-    
 }
 
 

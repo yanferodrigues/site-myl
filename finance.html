@@ -24,7 +24,7 @@
 
         <main>
             <aside class="menu box">
-                <a class="user">
+                <a class="user" href="user.html">
                     <img src="assets/icons/user.png">
                     <h5>USERNAME</h5>
                 </a>
@@ -50,6 +50,7 @@
                         <section class="finance-tabs">
                             <button onclick="tabSelector('finance-main',this)" class="finance-tab active">Main</button>
                             <button onclick="tabSelector('finance-credit',this)" class="finance-tab">Credit</button>
+                            <button onclick="tabSelector('finance-duties',this)" class="finance-tab">Duties</button>
                         </section>
                         <div id="finance-main" class="finance-page active" >
                             <section class="specific-finance">   
@@ -297,10 +298,15 @@
                                                                     <p>10/10</p>
                                                                     <p>Pendent</p>
                                                                 </div>
-
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="overlay-container-content-save">
+                                                        <button class="btn-save">
+                                                            Save
+                                                        </button>
+                                                    </div>  
+                                                    
                                                 </div>
                                             </div>
                                             <div onclick="openOverlay('credit-self-account-television')" class="credit-cards-accounts-self">
@@ -430,6 +436,9 @@
                                 </div>
                             </div>
                             
+                        </div> 
+                        <div id="finance-duties" class="finance-page">
+                            Duties
                         </div> 
                     </div>
 
