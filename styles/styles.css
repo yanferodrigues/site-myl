@@ -1178,22 +1178,88 @@ footer img{
 .credit-self-account-overlay-content-payed-instalments:hover {
     background-color: #eded79;
 }
+/*****TASKS*****/
+.task-overlay-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 50px;
+}
+.task-overlay-content input{ 
+    border-radius: 5px;
+    border: solid #b2b2b2 1px;
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.task-overlay-content textarea {
+    border-radius: 5px;
+    border: solid #b2b2b2 1px;
+    width: 300px;
+    height: 100px;
+    padding: 7px;
+}
+.task-overlay-content-time {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.task-overlay-content-time p{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 7px;
+}
+.task-overlay-content-hour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#task-overlay-content-hour-start, #task-overlay-content-hour-end{
+    display: flex;
+    gap: 5px;
+}
+#task-overlay-content-hour-start input, #task-overlay-content-hour-end input{
+    border-radius: 5px;
+    border: solid #b2b2b2 1px;
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
 
 /********************* CALENDAR ****************************/
 .date-input {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #eee;
-  outline-color: mediumpurple;
-  width: 30%;
-
+    border-radius: 5px;
+    border: solid #b2b2b2 1px;
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    color: #8f8f8f;
+    
 }
 
 .datepicker-container {
     display: flex; 
     flex-direction: column;
-    position:fixed;
+    position: relative;
     width: fit-content; 
     align-items: center; 
     width: 400px;
@@ -1232,7 +1298,7 @@ footer img{
 .datepicker-header input {
   font-size: 14px;
   border: 1px solid #eee;
-  outline-color: mediumpurple;
+  outline-color: var(--dark);
 }
 
 .datepicker button {
@@ -1255,7 +1321,7 @@ footer img{
 }
 
 .datepicker-header button:hover {
-  color: mediumpurple;
+  color: var(--dark);
 }
 
 .days, .dates {
@@ -1293,17 +1359,18 @@ footer img{
 }
 
 .dates button:hover:not(:disabled) {
-    background: #f0f0f0;
+    background: #d5d4db;
 }
 
 .dates button.today {
-    color: mediumpurple;
+    color: var(--dark);
     font-weight: bold;
-    border: 1px solid rgba(147, 112, 216, 0.3);
+    border: 1px solid rgba(73, 75, 109, 0.5);
+
 }
 
 .dates button.selected {
-    background: mediumpurple !important;
+    background: var(--dark) !important;
     color: #fff !important;
 }
 
@@ -1334,11 +1401,11 @@ footer img{
 }
 
 .datepicker-footer .apply {
-    background: mediumpurple;
+    background: var(--dark);
     color: white;
 }
 .datepicker-footer .apply:hover {
-    background: rgb(123, 92, 185);
+    background: var(--dark);
     color: white;
 }
 
