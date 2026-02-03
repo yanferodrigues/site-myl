@@ -24,18 +24,7 @@
         </header>
 
         <main>
-            <div id='add-task-btn' class="overlay">
-                <div class="overlay-container">
-                    <div class="close-overlay">
-                        <button onclick="closeOverlay('add-task-btn')" class="close-overlay-btn">
-                            X
-                        </button>
-                    </div>
-                    <div class="overlay-container-content">
-                            
-                    </div>
-                </div>
-            </div>
+            
             <aside class="menu box">
                 <a class="user" href="user.html">
                     <img src="assets/icons/user.png">
@@ -97,6 +86,60 @@
                             <button onclick="openOverlay('add-task-btn')" class="btn-add">
                                 Add
                             </button>
+                            <div id='add-task-btn' class="overlay">
+                                <div class="overlay-container">
+                                    <div class="close-overlay">
+                                        <button onclick="closeOverlay('add-task-btn')" class="close-overlay-btn">
+                                            X
+                                        </button>
+                                    </div>
+                                    <div class="overlay-container-content">
+                                        <div class="datepicker-container">
+                                            <input type="text" class="date-input" placeholder="Select date" />
+
+                                            <div class="datepicker" hidden>
+                                                <div class="datepicker-header">
+                                                    <button class="prev">Prev</button>
+
+                                                    <div>
+                                                        <select class="month-input">
+                                                            <option value="0">January</option>
+                                                            <option value="1">February</option>
+                                                            <option value="2">March</option>
+                                                            <option value="3">April</option>
+                                                            <option value="4">May</option>
+                                                            <option value="5">June</option>
+                                                            <option value="6">July</option>
+                                                            <option value="7">August</option>
+                                                            <option value="8">September</option>
+                                                            <option value="9">October</option>
+                                                            <option value="10">November</option>
+                                                            <option value="11">December</option>
+                                                        </select>
+                                                        <input type="number" class="year-input" min="1900" max="2100" />
+                                                    </div>
+
+                                                    <button class="next">Next</button>
+                                                </div>
+                                                <div class="days">
+                                                    <span>Sun</span>
+                                                    <span>Mon</span>
+                                                    <span>Tue</span>
+                                                    <span>Wed</span>
+                                                    <span>Thu</span>
+                                                    <span>Fri</span>
+                                                    <span>Sat</span>
+                                                </div>
+                                                <div class="dates"></div>
+                                                <div class="datepicker-footer">
+                                                    <button class="cancel">Cancel</button>
+                                                    <button class="apply">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
                             <button class="btn-remove">
                                 Remove
                             </button>
@@ -173,5 +216,6 @@
             <a href="https://linkedin.com" target="_blank"><img src="assets/icons/linkedin.png"></a>
         </footer>
         <script src="assets/js/general.js"></script>
+        <script src="assets/js/calendar.js"></script>
     </body>
 </html>
