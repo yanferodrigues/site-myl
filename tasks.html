@@ -95,6 +95,13 @@
                                     </div>
                                     <div class="overlay-container-content">
                                         <div class="task-overlay-add-content">
+                                            <h3>Add Task</h3>
+
+                                            <div class="box-confirmation">
+                                                <div id="daily-confirmation-check" class="checkbox" onclick="GeneralCheckbox(this)">🗸</div>
+                                                <p>Daily task</p>
+                                            </div>
+
                                             <input type="text" placeholder="Title:">
 
                                             <textarea name="task-description" id="task-description" placeholder="Description:"></textarea>
@@ -110,9 +117,9 @@
                                                 <div class="task-overlay-content-hour">
                                                     <label for="task-overlay-content-hour-start"> Start </label>
                                                     <div id="task-overlay-content-hour-start">
-                                                        <input type="number" maxlength="2">
+                                                        <input type="number">
                                                         <p>:</p>
-                                                        <input type="number" maxlength="2">
+                                                        <input type="number">
                                                     </div>
                                                 </div>
                                                 
@@ -121,12 +128,19 @@
                                                 <div class="task-overlay-content-hour">
                                                     <label for="task-overlay-content-hour-end"> End </label>
                                                     <div id="task-overlay-content-hour-end">
-                                                        <input type="number" maxlength="2">
+                                                        <input type="number">
                                                         <p>:</p>
-                                                        <input type="number" maxlength="2">
+                                                        <input type="number">
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <select>
+                                                <option></option>
+                                                <option>Light importance 🟦</option>
+                                                <option>Medium importance 🟨</option>
+                                                <option>Very important 🟥</option>
+                                            </select>
                                         </div>
                                         <div class="overlay-container-content-save">
                                             <button class="btn-save">
