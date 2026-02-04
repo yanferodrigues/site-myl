@@ -297,26 +297,6 @@ footer img{
 
 }
 
-.checkbox{
-    width: 20px;
-    height: 20px;
-    border: solid #b2b2b2 1px;
-    border-radius: 5px;
-    color: transparent;
-    cursor: pointer;
-}
-.checkbox.allowed{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 20px;
-    height: 20px;
-    border: solid #b2b2b2 1px;
-    border-radius: 5px;
-    background-color: #48a4ff;
-}
-
 .disabled {
   pointer-events: none;   
   opacity: 0.3;           
@@ -325,12 +305,16 @@ footer img{
 
 .box-confirmation {
     display: flex;
-    gap: 5px
+    gap: 5px;
 }
 .box-confirmation p{
     font-size: small;
 }
 
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
 
 /************** SPECIFIC *****************/
 .content-box{
@@ -912,6 +896,7 @@ footer img{
     border-radius: 7px;
     border: solid 1px #9c9c9c;
     font-size: large;
+    color: #8c8c8c;
 }
 #btn-logout {
     width: 300px;
@@ -985,7 +970,7 @@ footer img{
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     height: 40px;
-    max-width: 40px;
+    width: 40px;
     border: solid 1px;
 }
 .close-overlay-btn:hover{
@@ -1269,7 +1254,7 @@ footer img{
     overflow-y: auto;
 
 }
-.task-overlay-add-content input, .task-overlay-add-content select{ 
+.add-task-text-input, .task-overlay-add-content select,.current-date-input{ 
     border-radius: 5px;
     border: solid #b2b2b2 1px;
     width: 300px;

@@ -98,18 +98,18 @@
                                             <h3>Add Task</h3>
 
                                             <div class="box-confirmation">
-                                                <div id="daily-confirmation-check" class="checkbox" onclick="GeneralCheckbox(this)">🗸</div>
-                                                <p>Daily task</p>
+                                                <input class="checkbox" type="checkbox">
+                                                <p>Daily Task</p>
                                             </div>
 
-                                            <input type="text" placeholder="Title:">
+                                            <input type="text" placeholder="Title:" class="add-task-text-input">
 
                                             <textarea name="task-description" id="task-description" placeholder="Description:"></textarea>
 
                                             <input class="current-date-input" type="date" placeholder="Select Date">
 
                                             <div class="box-confirmation">
-                                                <div id="time-confirmation-check" class="checkbox allowed" onclick="TimeCheckbox(this)">🗸</div>
+                                                <input class="checkbox" type="checkbox">
                                                 <p>Allow time set</p>
                                             </div>
 
@@ -135,7 +135,7 @@
                                                 </div>
                                             </div>
 
-                                            <select>
+                                            <select >
                                                 <option></option>
                                                 <option>Light importance 🟦</option>
                                                 <option>Medium importance 🟨</option>
