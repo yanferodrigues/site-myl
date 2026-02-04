@@ -94,52 +94,18 @@
                                         </button>
                                     </div>
                                     <div class="overlay-container-content">
-                                        <div class="task-overlay-content">
+                                        <div class="task-overlay-add-content">
                                             <input type="text" placeholder="Title:">
-                                            <div class="datepicker-container">
-                                                <input type="text" class="date-input" placeholder="Select date:" />
 
-                                                <div class="datepicker" hidden>
-                                                    <div class="datepicker-header">
-                                                        <button class="prev">Prev</button>
-
-                                                        <div>
-                                                            <select class="month-input">
-                                                                <option value="0">January</option>
-                                                                <option value="1">February</option>
-                                                                <option value="2">March</option>
-                                                                <option value="3">April</option>
-                                                                <option value="4">May</option>
-                                                                <option value="5">June</option>
-                                                                <option value="6">July</option>
-                                                                <option value="7">August</option>
-                                                                <option value="8">September</option>
-                                                                <option value="9">October</option>
-                                                                <option value="10">November</option>
-                                                                <option value="11">December</option>
-                                                            </select>
-                                                            <input type="number" class="year-input" min="1900" max="2100" />
-                                                        </div>
-
-                                                        <button class="next">Next</button>
-                                                    </div>
-                                                    <div class="days">
-                                                        <span>Sun</span>
-                                                        <span>Mon</span>
-                                                        <span>Tue</span>
-                                                        <span>Wed</span>
-                                                        <span>Thu</span>
-                                                        <span>Fri</span>
-                                                        <span>Sat</span>
-                                                    </div>
-                                                    <div class="dates"></div>
-                                                    <div class="datepicker-footer">
-                                                        <button class="cancel">Cancel</button>
-                                                        <button class="apply">Apply</button>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <textarea name="task-description" id="task-description" placeholder="Description:"></textarea>
+
+                                            <input class="current-date-input" type="date" placeholder="Select Date">
+
+                                            <div class="box-confirmation">
+                                                <div id="time-confirmation-check" class="checkbox allowed" onclick="TimeCheckbox(this)">🗸</div>
+                                                <p>Allow time set</p>
+                                            </div>
+
                                             <div class="task-overlay-content-time">
                                                 <div class="task-overlay-content-hour">
                                                     <label for="task-overlay-content-hour-start"> Start </label>
@@ -181,7 +147,7 @@
                     <div class="specific-tasks-future">
                         <a class="specific-tasks-future-card" href="">
                             <h3 class="specific-tasks-title">
-                                Week
+                                Daily Tasks
                             </h3>
                             <div class="specific-tasks-future-card-content">
                                 <p>- Task </p>
@@ -200,26 +166,7 @@
                         </a>
                         <a class="specific-tasks-future-card" href="">
                             <h3 class="specific-tasks-title">
-                                Month
-                            </h3>
-                            <div class="specific-tasks-future-card-content">
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                                <p>- Task </p>
-                            </div>
-                        </a>
-                        <a class="specific-tasks-future-card" href="">
-                            <h3 class="specific-tasks-title">
-                                Year
+                                All Tasks
                             </h3>
                             <div class="specific-tasks-future-card-content">
                                 <p>- Task </p>

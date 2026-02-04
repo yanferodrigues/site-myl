@@ -297,6 +297,41 @@ footer img{
 
 }
 
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border: solid #b2b2b2 1px;
+    border-radius: 5px;
+    color: transparent;
+    cursor: pointer;
+}
+.checkbox.allowed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border: solid #b2b2b2 1px;
+    border-radius: 5px;
+    background-color: #48a4ff;
+}
+
+.disabled {
+  pointer-events: none;   
+  opacity: 0.3;           
+  filter: grayscale(50%); 
+}
+
+.box-confirmation {
+    display: flex;
+    gap: 5px
+}
+.box-confirmation p{
+    font-size: small;
+}
+
+
 /************** SPECIFIC *****************/
 .content-box{
     flex:1;
@@ -629,6 +664,17 @@ footer img{
     display: flex;
     gap: 3px;
 }
+
+#finance-duties {
+    width: 60%;
+    max-height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.finance-duties-self {
+    display: flex;
+    gap: 7px
+}
 /************** TASKS *****************/
 .specific-tasks {
     display: flex;
@@ -707,11 +753,11 @@ footer img{
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 }
 
 .specific-tasks-future-card {
-    width: 400px;
+    width: 450px;
     height: 250px;
     background: #fff;
     border-radius: 20px;
@@ -1179,7 +1225,7 @@ footer img{
     background-color: #eded79;
 }
 /*****TASKS*****/
-.task-overlay-content {
+.task-overlay-add-content {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1189,10 +1235,10 @@ footer img{
     gap: 30px;
     margin-top: 50px;
 }
-.task-overlay-content input{ 
+.task-overlay-add-content input{ 
     border-radius: 5px;
     border: solid #b2b2b2 1px;
-    width: 200px;
+    width: 300px;
     height: 30px;
     margin-left: 10px;
     padding-left: 5px;
@@ -1200,7 +1246,7 @@ footer img{
     text-align: center;
 }
 
-.task-overlay-content textarea {
+.task-overlay-add-content textarea {
     border-radius: 5px;
     border: solid #b2b2b2 1px;
     width: 300px;
@@ -1223,6 +1269,11 @@ footer img{
     flex-direction: column;
     align-items: center;
 }
+.task-overlay-content-hour label {
+    font-size: small;
+    margin-bottom: 5px;
+}
+
 #task-overlay-content-hour-start, #task-overlay-content-hour-end{
     display: flex;
     gap: 5px;
@@ -1238,10 +1289,6 @@ footer img{
     margin: 0;
 }
 
-
-
-
-
 /********************* CALENDAR ****************************/
 .date-input {
     border-radius: 5px;
@@ -1252,7 +1299,6 @@ footer img{
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
-    color: #8f8f8f;
     
 }
 
