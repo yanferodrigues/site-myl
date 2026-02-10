@@ -761,10 +761,21 @@ footer img{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    height: 80%;
+    width: 100%;
+    margin-top: 20px;
 }
-.specific-tasks-main-today-now-pendent p {
+.specific-tasks-main-today-now-pendent-description {
+    display: flex;
     font-size: smaller;
     color: #5e5e5e;
+    max-width: 60%;
+    min-height: 100px;
+    text-align: center;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .specific-tasks-main-today-now-title {
@@ -782,6 +793,7 @@ footer img{
     gap: 20px;
     align-items: center;
     justify-content:center;
+    
 }
 
 .specific-tasks-future-card {
@@ -795,6 +807,7 @@ footer img{
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 .specific-tasks-future-card-content{
     display: flex;
