@@ -179,7 +179,7 @@
                         </div>
                     </div>
                     <div class="specific-tasks-future">
-                        <div id="daily-tasks" class="specific-tasks-future-card">
+                        <div onclick="openOverlay('daily-tasks-overlay')" id="daily-tasks" class="specific-tasks-future-card">
                             <h3 class="specific-tasks-title">
                                 Daily Tasks
                             </h3>
@@ -198,7 +198,81 @@
                                 <p>- Task </p>
                             </div>
                         </div>
-                        <div id="others-tasks" class="specific-tasks-future-card" >
+                        <div id='daily-tasks-overlay' class="overlay">
+                            <div class="overlay-container">
+                                <div class="close-overlay">
+                                    <button onclick="closeOverlay('daily-tasks-overlay')" class="close-overlay-btn">
+                                        X
+                                    </button>
+                                </div>
+                                <div class="overlay-container-content">
+                                    <div class="general-tasks-overlay">
+                                        <div class="self-task-card-overlay">
+
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        <div class="self-task-card-overlay">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="openOverlay('others-tasks-overlay')" id="others-tasks" class="specific-tasks-future-card" >
                             <h3 class="specific-tasks-title">
                                 Others Tasks
                             </h3>
@@ -217,7 +291,19 @@
                                 <p>- Task </p>
                             </div>
                         </div>
-                        <div id="daily-tasks" class="specific-tasks-future-card">
+                        <div id='others-tasks-overlay' class="overlay">
+                            <div class="overlay-container">
+                                <div class="close-overlay">
+                                    <button onclick="closeOverlay('others-tasks-overlay')" class="close-overlay-btn">
+                                        X
+                                    </button>
+                                </div>
+                                <div class="overlay-container-content">
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="openOverlay('others-tasks-overlay')" id="daily-tasks" class="specific-tasks-future-card">
                             <h3 class="specific-tasks-title">
                                 Passed Tasks
                             </h3>
@@ -234,6 +320,18 @@
                                 <p>- Task </p>
                                 <p>- Task </p>
                                 <p>- Task </p>
+                            </div>
+                        </div>
+                        <div id='others-tasks-overlay' class="overlay">
+                            <div class="overlay-container">
+                                <div class="close-overlay">
+                                    <button onclick="closeOverlay('passed-tasks-overlay')" class="close-overlay-btn">
+                                        X
+                                    </button>
+                                </div>
+                                <div class="overlay-container-content">
+                                        
+                                </div>
                             </div>
                         </div>
                     </div>

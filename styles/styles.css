@@ -1062,35 +1062,25 @@ footer img{
     justify-content: end;
 }
 
+#edit-workout-monday,
+#edit-workout-tuesday,
+#edit-workout-wednessday,
+#edit-workout-thursday,
+#edit-workout-friday,
+#edit-workout-saturday,
+#edit-workout-sunday,
+#report-incomes,
+#report-expenses,
+#add-task-btn,
+.credit-self-account,
+#daily-tasks-overlay,
+#others-tasks-overlay,
+#passed-tasks-overlay {
+    display: none;
+}
+
 /**GYM**/
 
-#edit-workout-monday {
-    display: none;
-}
-
-#edit-workout-tuesday {
-    display: none;
-}
-
-#edit-workout-wednessday {
-    display: none;
-}
-
-#edit-workout-thursday {
-    display: none;
-}
-
-#edit-workout-friday {
-    display: none;
-}
-
-#edit-workout-saturday {
-    display: none;
-}
-
-#edit-workout-sunday {
-    display: none;
-}
 
 .overlay-container-content-gym-add {
     height: 50px;
@@ -1194,23 +1184,17 @@ footer img{
 }
 
 /*****FINANCE*****/
-#report-incomes {
-    display: none;
 
-}
+
 #report-incomes-container , #report-expenses-container{
     height: 550px;
     max-width: 30%;
 }
 
 
-#report-expenses {
-    display: none;
-}
 
-.credit-self-account {
-    display: none;
-}
+
+
 .finance-reports-overlay {
     display: flex;
     flex-direction: column;
@@ -1291,9 +1275,8 @@ footer img{
 
 
 /*****TASKS*****/
-#add-task-btn{
-    display: none;
-}
+
+
 .task-overlay-add-content {
     display: flex;
     flex-direction: column;
@@ -1360,6 +1343,23 @@ footer img{
     text-align: center;
     margin: 0;
 }
+.general-tasks-overlay {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.self-task-card-overlay {
+    display: flex;
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    border: solid #cecece 1px;
+}
+
 
 @media (max-width:1200px){
     main{
