@@ -21,54 +21,43 @@ let activeButton = null;
 
 function addSelfCard(button) {
     const allCards = document.getElementById("credit-cards");
-    const existingInput = allCards.querySelector(".new-self-card");
 
-    const allCardsContents = document.getElementById("credit-cards-main-content");
-    
-    
-    
-    if (existingInput) {
-        if (existingInput.value.trim() !== "") {
-            const div = document.createElement("div");
-            div.className = "self-card";
-            div.textContent = existingInput.value;
-            
+    const form = document.createElement("form");
+    form.className = "self-card-form";
+    //form.method = "POST";
+    //form.action = "/salvar/"; // ou a URL correta
 
-            allCards.replaceChild(div, existingInput);
+    // BLOQUEIA O RELOAD
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log("Form enviado, mas sem reload 😎");
+    });
 
-            const selfContent = allCardsContents.lastElementChild.cloneNode(true);
-            selfContent.id = `${existingInput.value}-accounts`;
-            div.setAttribute("onclick", `cardSelector("${selfContent.id}",this)`);
-            allCardsContents.appendChild(selfContent);
-            
-        } else {
-            existingInput.remove();
-        }
-    }
+    //const csrf = document.querySelector('[name=csrfmiddlewaretoken]');
+    //if (csrf) {
+    //  form.appendChild(csrf.cloneNode(true));
+    //}
+
     const input = document.createElement("input");
     input.type = "text";
+    input.name = "card_name";
     input.className = "new-self-card";
+    input.placeholder = "Card Name";
 
-    allCards.insertBefore(input, button);
-    input.focus();
-
-    input.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-            const div = document.createElement("div");
-            div.className = "self-card";
-            div.id = input.value.toLowerCase();
-            div.textContent = input.value
-
-            allCards.replaceChild(div, input);
-
-            const selfContent = allCardsContents.lastElementChild.cloneNode(true);
-            selfContent.id = `${input.value}-accounts`;
-            div.setAttribute("onclick", `cardSelector("${selfContent.id}",this)`);
-            allCardsContents.appendChild(selfContent);
-        };
-    })
-}
+    button.classList.remove("btn-add");
+    button.classList.add("btn-save");
+    button.removeAttribute("onclick");
+    button.type = "submit";
+    button.textContent = "Save"
     
+    
+
+
+    form.appendChild(input);
+    form.appendChild(button);
+    allCards.appendChild(form);
+}
+
 function setState(btn) {
     btn.classList.toggle("payed");
     if (btn.lastElementChild.textContent === "Payed") {

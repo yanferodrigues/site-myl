@@ -17,8 +17,7 @@
                 </a>
                 <div class="icons">
                     <a href="about.html"><img src="assets/icons/question.png"></a>
-                    <a><img src="assets/icons/notifications.png"></a>
-                    <a><img src="assets/icons/settings.png"></a>
+                    <button><img src="assets/icons/notifications.png"></button>
                 </div>
             </div>
         </header>
@@ -57,9 +56,11 @@
                                     <h4 class="specific-tasks-main-today-now-title">
                                         Next task:
                                     </h4>
-                                    <p class="specific-tasks-main-today-now-pendent">
+                                    <div onclick="openOverlay('pendent-task-overlay')" class="specific-tasks-main-today-now-pendent">
                                         PENDENT TASK
-                                    </p>
+                                        <p>pendent task description</p>
+                                        <p>10:00</p>
+                                    </div>
                                     <button class="btn-save">
                                         Done
                                     </button>
@@ -84,82 +85,101 @@
                         </div>
                         <div class="specific-tasks-main-btns">
                             <button onclick="openOverlay('add-task-btn')" class="btn-add">
-                                Add
+                                Add task
                             </button>
                             <div id='add-task-btn' class="overlay">
-                                <div class="overlay-container">
+                                <form class="overlay-container" method="POST">
+
                                     <div class="close-overlay">
-                                        <button onclick="closeOverlay('add-task-btn')" class="close-overlay-btn">
+                                        <button type="button"
+                                                onclick="closeOverlay('add-task-btn')"
+                                                class="close-overlay-btn">
                                             X
                                         </button>
                                     </div>
+
                                     <div class="overlay-container-content">
+
                                         <div class="task-overlay-add-content">
                                             <h3>Add Task</h3>
 
                                             <div class="box-confirmation">
-                                                <input class="checkbox" type="checkbox">
+                                                <input class="checkbox" type="checkbox" name="daily_task">
                                                 <p>Daily Task</p>
                                             </div>
 
-                                            <input type="text" placeholder="Title:" class="add-task-text-input">
+                                            <input
+                                                type="text"
+                                                name="title"
+                                                placeholder="Title:"
+                                                class="add-task-text-input"
+                                                required
+                                            >
 
-                                            <textarea name="task-description" id="task-description" placeholder="Description:"></textarea>
+                                            <textarea
+                                                name="description"
+                                                id="task-description"
+                                                placeholder="Description:"
+                                            ></textarea>
 
-                                            <input class="current-date-input" type="date" placeholder="Select Date">
+                                            <input
+                                                class="current-date-input"
+                                                type="date"
+                                                name="task_date"
+                                                required
+                                            >
 
                                             <div class="box-confirmation">
-                                                <input class="checkbox" type="checkbox">
+                                                <input class="checkbox" type="checkbox" name="allow_time">
                                                 <p>Allow time set</p>
                                             </div>
 
                                             <div class="task-overlay-content-time">
+
                                                 <div class="task-overlay-content-hour">
-                                                    <label for="task-overlay-content-hour-start"> Start </label>
+                                                    <label>Start</label>
                                                     <div id="task-overlay-content-hour-start">
-                                                        <input type="number">
+                                                        <input type="number" name="start_hour" min="0" max="23">
                                                         <p>:</p>
-                                                        <input type="number">
+                                                        <input type="number" name="start_minute" min="0" max="59">
                                                     </div>
                                                 </div>
-                                                
+
                                                 <p>-</p>
 
                                                 <div class="task-overlay-content-hour">
-                                                    <label for="task-overlay-content-hour-end"> End </label>
+                                                    <label>End</label>
                                                     <div id="task-overlay-content-hour-end">
-                                                        <input type="number">
+                                                        <input type="number" name="end_hour" min="0" max="23">
                                                         <p>:</p>
-                                                        <input type="number">
+                                                        <input type="number" name="end_minute" min="0" max="59">
                                                     </div>
                                                 </div>
+
                                             </div>
 
-                                            <select >
-                                                <option></option>
-                                                <option>Light importance 🟦</option>
-                                                <option>Medium importance 🟨</option>
-                                                <option>Very important 🟥</option>
+                                            <select name="priority" required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="light">Light importance 🟦</option>
+                                                <option value="medium">Medium importance 🟨</option>
+                                                <option value="high">Very important 🟥</option>
                                             </select>
                                         </div>
+
                                         <div class="overlay-container-content-save">
-                                            <button class="btn-save">
+                                            <button type="submit" class="btn-save">
                                                 Save
                                             </button>
-                                        </div>  
-                                    </div> 
-                                </div>
+                                        </div>
+
+                                    </div>
+
+                                </form>
                             </div>
-                            <button class="btn-remove">
-                                Remove
-                            </button>
-                            <button class="btn-save">
-                                Forgotten
-                            </button>
                         </div>
                     </div>
                     <div class="specific-tasks-future">
-                        <a class="specific-tasks-future-card" href="">
+                        <div class="specific-tasks-future-card" href="">
                             <h3 class="specific-tasks-title">
                                 Daily Tasks
                             </h3>
@@ -177,10 +197,10 @@
                                 <p>- Task </p>
                                 <p>- Task </p>
                             </div>
-                        </a>
-                        <a class="specific-tasks-future-card" href="">
+                        </div>
+                        <div class="specific-tasks-future-card" href="">
                             <h3 class="specific-tasks-title">
-                                All Tasks
+                                Others Tasks
                             </h3>
                             <div class="specific-tasks-future-card-content">
                                 <p>- Task </p>
@@ -196,7 +216,26 @@
                                 <p>- Task </p>
                                 <p>- Task </p>
                             </div>
-                        </a>
+                        </div>
+                        <div class="specific-tasks-future-card" href="">
+                            <h3 class="specific-tasks-title">
+                                Passed Tasks
+                            </h3>
+                            <div class="specific-tasks-future-card-content">
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                                <p>- Task </p>
+                            </div>
+                        </div>
                     </div>
                 </div>     
             </section>

@@ -74,6 +74,12 @@ header{
     min-width:22px;
     filter:brightness(0) invert(1);
 }
+.icons button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
 
 /* MAIN */
 main{
@@ -297,6 +303,18 @@ footer img{
 
 }
 
+.btn-less-plus{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn-less-plus:hover{
+    border: solid #6a6a6a 1px;
+}
+
 .disabled {
   pointer-events: none;   
   opacity: 0.3;           
@@ -401,9 +419,6 @@ footer img{
     height: 15px;
 }
 
-.specific-finance-top-leftover:hover{
-    box-shadow: 0px 0px 16px  #79afff;
-}
 
 .specific-finance-top-income:hover{
     box-shadow: 0px 0px 16px #79ff79;
@@ -587,6 +602,12 @@ footer img{
     font-size: large;
     text-align: center;
 }
+.self-card-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .add-credit-card-account {
     display: flex;
     justify-content: center;
@@ -657,8 +678,21 @@ footer img{
 }
 .finance-duties-self {
     display: flex;
+    align-items: center;
     gap: 7px;
     margin-top: 20px;
+}
+.btn-little-less {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 10px;
+    border: 0px;
+    border-radius: 50px;
+}
+.btn-little-less:hover {
+    background-color: #c25f5f;
 }
 /************** TASKS *****************/
 .specific-tasks {
@@ -672,15 +706,16 @@ footer img{
 .specific-tasks-main {
     width: 90%;
     display: flex;
-    
+    flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
 }
 .specific-tasks-title {
     text-decoration: none;
     color: #151515;
 }
 .specific-tasks-main-today {
-    width:50%;
+    width:70%;
     height:400px;
     background:#ffffff;
     border-radius:20px;
@@ -719,11 +754,19 @@ footer img{
     width: 50%;
     height: 300px;
 }
-.specific-tasks-main-today-now p{
-    text-decoration:underline;
-    font-size: larger;
-    text-shadow: var(--shadow);
+.specific-tasks-main-today-now-pendent {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+.specific-tasks-main-today-now-pendent p {
+    font-size: smaller;
+    color: #5e5e5e;
+}
+
 .specific-tasks-main-today-now-title {
     width: 100%;
     display: flex;
@@ -788,7 +831,6 @@ footer img{
 }
 .specific-tasks-main-btns {
     display: flex;
-    flex-direction: column;
     width: 20%;
     justify-content: center;
     align-items: center;
@@ -898,6 +940,16 @@ footer img{
     font-size: large;
     color: #8c8c8c;
 }
+.change-user {
+    text-decoration: underline;
+    color: var(--dark);
+    font-size: 12px ;
+    cursor: pointer;
+}
+.change-user:hover{
+    text-decoration: underline;
+    color: #6b677e;
+}
 #btn-logout {
     width: 300px;
     height: 50px;
@@ -953,7 +1005,7 @@ footer img{
 .overlay-container {
     display: flex;
     background-color: white;
-    height: 80%;
+    height: 700px;
     width:50%;
     min-width: 480px;
     border-radius: 15px;
@@ -983,6 +1035,7 @@ footer img{
     flex-direction: column;
     width: 100%;
     height: 92%;
+
     justify-content: start;
     align-items: center;
     overflow-y: auto;
@@ -1065,18 +1118,6 @@ footer img{
     padding: 10px;
 }
 
-.overlay-container-content-gym-exercises button {
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    border: 0;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.overlay-container-content-gym-exercises button:hover {
-    border: solid #6a6a6a 1px;
-}
-
 .gym-sets {
     border-radius: 5px;
     border: solid #b2b2b2 1px;
@@ -1145,15 +1186,11 @@ footer img{
 
 }
 #report-incomes-container , #report-expenses-container{
-    height: 500px;
+    height: 550px;
     max-width: 30%;
 }
 
-#report-incomes .overlay-container{
-    width: 40%;
-    min-width: 350px;
-    padding-bottom: 30px;
-}
+
 #report-expenses {
     display: none;
 }
@@ -1177,7 +1214,7 @@ footer img{
 }
 .finance-reports-overlay input, .finance-reports-overlay select {
     width: 80%;
-    height: 60px;
+    min-height: 60px;
     border: solid 1px #cacaca;
     border-radius: 5px;
     text-align: center;
@@ -1238,6 +1275,8 @@ footer img{
 .credit-self-account-overlay-content-payed-instalments:hover {
     background-color: #eded79;
 }
+
+
 /*****TASKS*****/
 #add-task-btn{
     display: none;
@@ -1246,6 +1285,7 @@ footer img{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: start;
     gap: 30px;
@@ -1343,7 +1383,7 @@ footer img{
         align-items: center;
     }
     .specific-tasks-main-today {
-        width: 80%;
+        width: 95%;
     }
     .specific-tasks-main-btns {
         flex-direction: row;

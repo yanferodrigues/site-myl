@@ -16,8 +16,7 @@
                 </a>
                 <div class="icons">
                     <a href="about.html"><img src="assets/icons/question.png"></a>
-                    <a><img src="assets/icons/notifications.png"></a>
-                    <a><img src="assets/icons/settings.png"></a>
+                    <button><img src="assets/icons/notifications.png"></button>
                 </div>
             </div>
         </header>
@@ -82,7 +81,7 @@
                                                 </button>
                                             </div>
                                             <div class="overlay-container-content">
-                                                <div class="finance-reports-overlay">
+                                                <form method="get" action="" class="finance-reports-overlay">
                                                     <h3>REPORT INCOMES</h3>
                                                     <select>
                                                         <option></option>
@@ -96,14 +95,11 @@
                                                         <option>Invests</option>
                                                         <option>Travel</option>
                                                     </select>
-
-                                                    <form action="">
-                                                        <input placeholder="Value:" type="text">
-                                                        <input placeholder="Date:" type="date">
-                                                        <input placeholder="Description:" type="text">
-                                                        <button class="btn-add">Add</button>
-                                                    </form>
-                                                </div>
+                                                    <input placeholder="Value:" type="text">
+                                                    <input placeholder="Date:" type="date">
+                                                    <input placeholder="Description:" type="text">
+                                                    <button class="btn-save">Save</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -125,7 +121,7 @@
                                                 </button>
                                             </div>
                                             <div class="overlay-container-content">
-                                                 <div class="finance-reports-overlay">
+                                                <form action="" method="get" class="finance-reports-overlay">
                                                     <h3>REPORT EXPENSES</h3>
                                                     <select>
                                                         <option></option>
@@ -139,13 +135,11 @@
                                                         <option>Invests</option>
                                                         <option>Travel</option>
                                                     </select>
-                                                    <form action="">
-                                                        <input placeholder="Value:" type="text">
-                                                        <input placeholder="Date:" type="datetime">
-                                                        <input placeholder="Description:" type="text">
-                                                        <button class="btn-remove">Remove</button>
-                                                    </form>
-                                                </div>
+                                                    <input placeholder="Value:" type="text">
+                                                    <input placeholder="Date:" type="date">
+                                                    <input placeholder="Description:" type="text">
+                                                    <button class="btn-save">Save</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -444,23 +438,28 @@
                         <div id="finance-duties" class="finance-page">
                             <div class="finance-duties-self">
                                 <input class="checkbox" type="checkbox">
-                                <p>Duty 1</p>
+                                <p>Duty 1</p>   
+                                <button class="btn-little-less">-</button>
                             </div>
                             <div class="finance-duties-self">
                                 <input class="checkbox" type="checkbox">
                                 <p>Duty 1</p>
+                                <button class="btn-little-less">-</button>
                             </div>
                             <div class="finance-duties-self">
                                 <input class="checkbox" type="checkbox">
                                 <p>Duty 1</p>
+                                <button class="btn-little-less">-</button>
                             </div>
                             <div class="finance-duties-self">
                                 <input class="checkbox" type="checkbox">
                                 <p>Duty 1</p>
+                                <button class="btn-little-less">-</button>
                             </div>
                             <div class="finance-duties-self">
                                 <input class="checkbox" type="checkbox">
                                 <p>Duty 1</p>
+                                <button class="btn-little-less">-</button>
                             </div>
                         </div> 
                     </div>
