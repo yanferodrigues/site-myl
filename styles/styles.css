@@ -593,6 +593,7 @@ footer img{
     cursor: pointer;
     font-size: large;
     text-transform: capitalize;
+    gap: 10px;
 }
 .new-self-card {
     border: solid #cacaca 1px;
@@ -682,17 +683,35 @@ footer img{
     gap: 7px;
     margin-top: 20px;
 }
-.btn-little-less {
+.btn-little-less-white {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 20px;
-    height: 10px;
-    border: 0px;
-    border-radius: 50px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
 }
-.btn-little-less:hover {
-    background-color: #c25f5f;
+.btn-little-less-white:hover {
+    background-color: #c71e1e;
+    color: white;
+}
+.btn-little-less-black {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.btn-little-less-black:hover {
+    background-color: #c71e1e;
+    color: white;
 }
 /************** TASKS *****************/
 .specific-tasks {
@@ -1351,13 +1370,48 @@ footer img{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 10px;
 }
 .self-task-card-overlay {
     display: flex;
-    width: 200px;
+    width: 230px;
     height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 15px;
     border: solid #cecece 1px;
+    padding: 8px;
+    text-align: center;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.self-task-card-overlay-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.self-task-card-overlay-title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--dark);
+    border-radius: 15px ;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-justify: distribute;
+    margin-bottom: 5px;
+}
+.self-task-card-overlay-description {
+    margin-top: 5px;
+    color: #646464;
+    margin-bottom: 5px;
 }
 
 
@@ -1455,10 +1509,11 @@ footer img{
         height: 100%;
     }
     .overlay-container-content-gym-form {
-
-    width: 95%;
-
+        width: 95%;
     }   
+    .self-card-form {
+        flex-direction:row;
+    }
 }
 
 
