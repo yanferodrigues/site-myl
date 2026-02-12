@@ -382,6 +382,7 @@ footer img{
 
 .not-found, .rest-day {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -552,9 +553,12 @@ footer img{
     flex-shrink: 0;
 }
 .credit-cards-accounts.active {
-    display: block;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .credit-cards-accounts {
@@ -584,7 +588,7 @@ footer img{
 .self-card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: solid #cacaca 1px;
     height: 50px;
@@ -594,6 +598,7 @@ footer img{
     font-size: large;
     text-transform: capitalize;
     gap: 10px;
+    padding: 10px;
 }
 .new-self-card {
     border: solid #cacaca 1px;
@@ -680,8 +685,15 @@ footer img{
 .finance-duties-self {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 7px;
     margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.finance-duties-self:hover {
+    background-color: #dbdbdb;
 }
 .btn-little-less-white {
     display: flex;
@@ -704,9 +716,9 @@ footer img{
     text-align: center;
     width: 20px;
     height: 20px;
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: transparent;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    background-color: white;
     color: rgb(0, 0, 0);
 }
 .btn-little-less-black:hover {
@@ -1094,7 +1106,8 @@ footer img{
 .credit-self-account,
 #daily-tasks-overlay,
 #others-tasks-overlay,
-#passed-tasks-overlay {
+#passed-tasks-overlay,
+#add-finance-account {
     display: none;
 }
 

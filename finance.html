@@ -214,21 +214,27 @@
                                     </div>
                                     <div onclick="cardSelector('inter-accounts',this)" id="inter" class="self-card">
                                         Inter
+                                        <button class="btn-little-less-white">-</button>
                                     </div>
                                     <div onclick="cardSelector('bradesco-accounts',this)" id="bradesco" class="self-card">
                                         Bradesco
+                                        <button class="btn-little-less-white">-</button>
                                     </div>
                                     <div onclick="cardSelector('sicredi-accounts',this)" id="sicredi"class="self-card">
                                         Sicredi
+                                        <button class="btn-little-less-white">-</button>
                                     </div>
                                     <div onclick="cardSelector('picpay-accounts',this)" id="picpay"class="self-card">
                                         Picpay
+                                        <button class="btn-little-less-white">-</button>
                                     </div>
                                     <div onclick="cardSelector('bancodobrasil-accounts',this)" id="banco do brasil" class="self-card">
                                         Banco do brasil
+                                        <button class="btn-little-less-white">-</button>
                                     </div>
                                     <div onclick="cardSelector('will-accounts',this)" id="will" class="self-card">
                                         Will
+                                        <button class="btn-little-less-white">-</button>
                                     </div>
                                     <button onclick="addSelfCard(this)" class="btn-add">
                                         Add
@@ -400,36 +406,78 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                           
                                         </div> 
+                                        <button onclick="openOverlay('add-finance-account')" class="btn-add">Add</button>
+                                        <div id='add-finance-account' class="overlay">
+                                            <div class="overlay-container">
+                                                <div class="close-overlay">
+                                                    <button onclick="closeOverlay('add-finance-account')" class="close-overlay-btn">
+                                                        X
+                                                    </button>
+                                                </div>
+                                                <div class="overlay-container-content">
+                                                    <div class="add-finance-account">
+                                                        <form >
+                                                            <input type="text" placeholder="Title:">
+                                                            <select>
+                                                                <option>January</option>
+                                                                <option>February</option>
+                                                                <option>March</option>
+                                                                <option>April</option>
+                                                                <option>May</option>
+                                                                <option>June</option>
+                                                                <option>July</option>
+                                                                <option>August</option>
+                                                                <option>September</option>
+                                                                <option>October</option>
+                                                                <option>November</option>
+                                                                <option>December</option>                          
+                                                            </select>
+                                                            <input type="value" placeholder="Total value:" min="1">
+                                                            <input type="number" placeholder="Total installments:" min="1">
+                                                            
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div id="inter-accounts" class="credit-cards-accounts">
                                         <div class="not-found">
                                             ACCOUNTS NOT FOUND
+                                            <button class="btn-add">Add</button>
                                         </div>   
                                     </div> 
                                     <div id="bradesco-accounts" class="credit-cards-accounts">
                                         <div class="not-found">
                                             ACCOUNTS NOT FOUND
+                                            <button class="btn-add">Add</button>
                                         </div>   
                                     </div>
                                     <div id="sicredi-accounts" class="credit-cards-accounts">
                                         <div class="not-found">
                                             ACCOUNTS NOT FOUND
+                                            <button class="btn-add">Add</button>
                                         </div>    
                                     </div>
                                     <div id="picpay-accounts" class="credit-cards-accounts">
                                         <div class="not-found">
                                             ACCOUNTS NOT FOUND
+                                            <button class="btn-add">Add</button>
                                         </div>      
+                                        
                                     </div>
                                     <div id="bancodobrasil-accounts" class="credit-cards-accounts">
                                         <div class="not-found">
                                             ACCOUNTS NOT FOUND
+                                            <button class="btn-add">Add</button>
                                         </div>     
                                     </div>
                                     <div id="will-accounts" class="credit-cards-accounts">
                                         <div class="not-found">
                                             ACCOUNTS NOT FOUND
+                                            <button class="btn-add">Add</button>
                                         </div>   
                                     </div>
                                 </div>
