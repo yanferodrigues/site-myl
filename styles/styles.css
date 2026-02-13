@@ -385,11 +385,13 @@ footer img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     font-family: "Archivo Black", sans-serif;
     font-weight: 800px;
     color: #a9a9a9;
     font-size: xx-large;
+}
+.not-found {
+    height: 800px;
 }
 
 /************** FINANCE *****************/
@@ -677,10 +679,8 @@ footer img{
 }
 
 #finance-duties {
-    width: 60%;
+    width: 90%;
     height: 700px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .finance-duties-self {
     display: flex;
@@ -691,9 +691,31 @@ footer img{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
+    height: 80px;
 }
 .finance-duties-self:hover {
     background-color: #dbdbdb;
+}
+.finance-duties-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.finance-duties-all {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.btn-add-dutie {
+    display: flex;
+    justify-content: center;
+}
+.finance-duties-save {
+    display: flex;
+    justify-content: end;
 }
 .btn-little-less-white {
     display: flex;
@@ -896,7 +918,7 @@ footer img{
     height: 200px;
     border: solid 1px #cacaca;
     border-radius: 15px;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 .specific-gym-days-title {
@@ -1425,6 +1447,13 @@ footer img{
     margin-top: 5px;
     color: #646464;
     margin-bottom: 5px;
+}
+.overlay-tasks-general-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
 }
 
 
